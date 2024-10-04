@@ -1,0 +1,46 @@
+/* Navbar Container */
+.navbarsection {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logodiv {
+  flex: 1;
+}
+
+
+.navlist {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navitem {
+  font-size: 14px;
+}
+
+.navitem a {
+  text-decoration: none;
+  color: #333; 
+  font-weight: bold;
+}
+
+.navitem a:hover {
+  color: #4571a0; 
+}
+
+
+body {
+  padding-top: 60px; 
+}

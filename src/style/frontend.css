@@ -1,0 +1,970 @@
+.se-section {
+    margin-top: auto;
+    width: 100%;
+    height: 80vh;
+    background-image: url('../assets/img/home-2.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+.se-overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 107, 202, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.se-content {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+}
+
+.se-content h1 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.se-content p {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.se-button {
+    padding: 5px 30px;
+    font-size: 12px;
+    color: rgb(57, 22, 153);
+    background-color: #ffffff;
+    border: none;
+    border-radius: 20px;
+}
+
+/*web */
+.web-services {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+.web-services h2 {
+    text-align: left;
+    font-size: 2rem;
+    color: #292e33;
+    margin-bottom: 1.5rem;
+}
+
+.web-services h4 {
+    text-align: left;
+    font-size: 1.2rem;
+    color: #0056b3;
+    font-family: 'Lucida Grande';
+}
+
+
+.web-app {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.web-icon {
+    color: rgb(49, 49, 212);
+    font-size: 1rem;
+}
+
+.cus-app {
+    flex: 1 1 45%;
+    background-color: white;
+    box-shadow: #495057;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem;
+    transition: transform 0.2s;
+}
+
+.cus-app h3 {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 0.5rem;
+}
+
+.cus-app p {
+    font-size: 13px;
+    color: #495057;
+    margin-left: 20px;
+    line-height: 1.6;
+}
+
+
+/* Main Web Development Container */
+.web-dev {
+    margin-top: 10%;
+    padding: 40px;
+    background-color: #f8f9fa;
+    text-align: center;
+    color: #333;
+    margin-bottom: 5%;
+}
+
+.web-dev h1 {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.web-services-title {
+    font-size: 1rem;
+    color: #0056b3;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.web-dev p {
+    font-size: 0.9rem;
+    color: #494545;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.web-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.web-service-card {
+    padding: 20px;
+    border-radius: 8px;
+    align-items: center;
+
+}
+
+
+.web-dservice-icon {
+    font-size: 2rem;
+    color: #0056b3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 auto 15px;
+
+}
+
+.web-service-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.web-service-card p {
+    font-size: 13px;
+    color: #666;
+}
+
+
+/* BackgroundOverlay.css */
+.img-background-container {
+    margin: auto;
+    width: 40%;
+    height: 60vh;
+    background-image: url('../assets/img/web.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10%;
+}
+
+.img-overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(58, 64, 155, 0.5);
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.img-con h1 {
+    font-size: 2rem;
+
+}
+
+.img-con p {
+    font-size: 1rem;
+    align-items: center;
+    margin: 30px;
+}
+
+
+/*e-commerce content*/
+.e-services-container {
+    max-width: 1000px;
+    margin: 5% auto;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.e-services-container h2 {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #0056b3;
+    font-family: 'Lucida Grande';
+}
+
+.e-services-container h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    font-family: 'Lucida Grande';
+}
+
+.e-app {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.e-service {
+    width: 300px;
+    box-shadow: #495057;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 20px auto;
+    transition: transform 0.2s;
+}
+
+.e-icon {
+    color: #0056b3;
+}
+
+.e-service h3 {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.e-service p {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/*angular*/
+.angular-services {
+    max-width: 1000px;
+    margin: 5% auto;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.angular-services h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: 'Lucida Grande';
+    color: #1170d6;
+}
+
+.a-app {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.a-service {
+    width: 300px;
+    box-shadow: #495057;
+    border-radius: 8px;
+    background-color: white;
+    padding: 1.5rem;
+    margin: 20px auto;
+    transition: transform 0.2s;
+}
+
+.a-icon {
+    margin-right: 15px;
+    color: #007bff;
+    font-size: 24px;
+}
+
+.a-service h3 {
+    margin: 0;
+    font-size: 14px;
+    color: black;
+
+}
+
+.a-service p {
+    margin: 5px 0 0;
+    font-size: 12px;
+    color: #555;
+}
+
+
+/*containar -second*/
+.angular-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.angular-header {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+
+.angular-header button {
+    background-color: #0056b3;
+    padding: 20px;
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.angular-header h1 {
+    font-size: 2rem;
+    color: #0c6bd1;
+    text-align: center;
+    font-family: 'Lucida Grande';
+    margin: 0;
+}
+
+.angular-body {
+    width: 500px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+
+}
+
+.angular-body p {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+/*Typescript contants*/
+.ty-container {
+    max-width: 800px;
+    margin: 5% auto;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.ty-container h1 {
+    font-size: 1rem;
+    color: #0056b3;
+    font-family: 'Lucida Sans';
+    margin-bottom: 1.5rem;
+}
+
+.ty-app {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.ty-card {
+    flex: 1 1 45%;
+    background-color: white;
+    box-shadow: #495057;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    max-width: 200px;
+
+}
+
+.ty-icon {
+    font-size: 3rem;
+    color: #007acc;
+    margin-bottom: 1rem;
+}
+
+.ty-card h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+
+.ty-card p {
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+}
+
+
+.ty-image {
+    margin: auto;
+    width: 60%;
+    height: 70vh;
+    background-image: url('../assets/img/t1.png');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5%;
+
+}
+
+.ty-overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(57, 44, 240, 0.5);
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.ty-contetent p {
+    font-size: 3rem;
+}
+
+.last-three {
+    color: black;
+}
+
+/*services typescript*/
+.ty-main {
+    background-color: #f5f5f5;
+    padding: 50px;
+    margin-bottom: 5%;
+}
+
+.services-ty {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.ty-main h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Lucida Sans';
+    color: #0562c5;
+}
+
+.service-card-ty {
+    flex: 1 1 calc(33.333% - 40px);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #ffffff;
+}
+
+
+.icon-ty {
+    font-size: 2rem;
+    color: #3498db;
+    margin-bottom: 12px;
+}
+
+.service-card-ty h3 {
+    font-size: 14px;
+    color: #333;
+    margin: 12px 0;
+}
+
+.service-card-ty p {
+    font-size: 13px;
+    align-items: center;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+/* styles -card of typescript.css */
+.service-card-ty {
+    transition: all 0.3s ease-in-out;
+}
+
+.service-card-ty:hover {
+    background-color: #2b91d4;
+
+}
+
+.service-card-ty:hover .icon-ty {
+    color: black;
+
+}
+
+.service-card-ty:hover h3 {
+    color: black;
+    text-decoration: overline;
+}
+
+.service-card-ty:hover p {
+    color: white;
+
+}
+
+
+/*react js contants*/
+.react-container {
+    padding: 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.react-container h2 {
+    font-size: 2rem;
+    color: #333;
+    font-family: 'Lucida Sans';
+    margin-bottom: 20px;
+}
+
+.r-p p {
+    font-size: 12px;
+    align-items: center;
+    font-family: Georgia;
+    color: #007acc;
+    margin-bottom: 2%;
+}
+
+.react-container h1 {
+    font-size: 14px;
+    color: #007acc;
+}
+
+.react-app {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.react-card {
+    background-color: #fff;
+    border-radius: 10px;
+    flex: 1 1 calc(33.333% - 40px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    max-width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.react-icon {
+    font-size: 2.5rem;
+    color: #1167c2;
+    margin-bottom: 15px;
+}
+
+
+.react-title {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+.react-description {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.react-image {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.react-image__img {
+    width: 50%;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.react-image__content {
+    flex: 1;
+}
+
+.react-image__content h1 {
+    font-size: 30px;
+    color: #333;
+    font-family: serif;
+    margin-bottom: 10px;
+}
+
+.react-image__content p {
+    font-size: 14px;
+    color: #0056b3;
+    line-height: 1.6;
+    font-family: Georgia;
+    margin-bottom: 20px;
+}
+
+.react-image__content h3 {
+    font-size: 30px;
+    color: #333;
+    font-family: serif;
+    margin-bottom: 10px;
+}
+
+.react-image__content ul {
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.react-image__content li {
+    font-size: 14px;
+    color: #0056b3;
+    line-height: 1.6;
+    font-family: Georgia;
+    margin-bottom: 20px;
+}
+
+
+/*react text*/
+.react-text {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15%;
+    align-items: center;
+    width: 600px;
+    background-color: #f5f5f5;
+    justify-content: center;
+    text-align: center;
+    margin: 5% auto;
+}
+
+.r-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 15px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+
+.react-icon {
+    font-size: 36px;
+}
+
+.js-text {
+    margin-bottom: 5px;
+}
+
+.react-text ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.r-ricon {
+    margin-right: 8px;
+    color: #007bff;
+}
+
+.react-text ul li {
+    margin: 4px 0;
+    font-size: 14px;
+    font-family: Georgia;
+    color: #0056b3;
+}
+
+/*vue js  development*/
+.vue-container {
+    margin: 40px auto;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.vue-container h1 {
+    padding: 20px;
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-family: Geneva, Verdana;
+    color: #000000;
+    text-decoration: underline overline;
+}
+
+.vue-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.vue-card {
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+
+}
+
+.vue-icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.vue-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #007acc;
+    font-family: Georgia;
+}
+
+.vue-description {
+    font-size: 13px;
+    color: #666;
+}
+
+/*vuejs image sets*/
+.vue-image {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+
+
+.vue-p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.vue-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+
+}
+
+.vue-img {
+    max-width: 30%;
+    max-height: 40%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    border: 2px solid #007acc;
+}
+
+.vue-h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 20px;
+    color: #333;
+}
+
+.vue-p {
+    font-size: 14px;
+    color: #072dda;
+    margin-top: 10px;
+    font-family: 'Lucida Sans';
+    text-align: center;
+}
+
+/*next js  devlopments css*/
+.next-image {
+    background-color: #f8f9fa;
+    padding: 40px;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(80, 79, 79, 0.1);
+    text-align: center;
+    justify-content: center;
+    margin: 20px auto;
+    gap: 20px;
+    margin-bottom: 5%;
+}
+
+
+.next-image__img {
+    flex: 0 0 300px;
+    width: 200px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.next__content h1 {
+    font-size: 2.5rem;
+    color: #5b5d61;
+    margin-bottom: 20px;
+}
+
+.next__content p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.next__content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.next__content li {
+    font-size: 14px;
+    color: #0070f3;
+    line-height: 1.6;
+    font-family: 'Lucida Sans';
+    margin-bottom: 10px;
+
+}
+
+.next__content li::before {
+    content: "● ";
+    font-size: 15px;
+    color: #000000;
+
+}
+
+/*next js  services*/
+
+.nextjs-services {
+    padding: 20px;
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    margin-bottom: 5%;
+}
+
+.next-list {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.next-list h3 {
+    color: #0070f3;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.next-list h2 {
+    font-size: 26px;
+    color: #333;
+}
+
+.next-grid {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center;
+}
+
+.next-card {
+    background-color: white;
+    padding: 20px;
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.next-card .icon {
+    font-size: 30px;
+    color: #0070f3;
+    margin-bottom: 10px;
+}
+
+.next-card h3 {
+    font-size: 14px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.next-card p {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Image.module.css */
+.n-image img {
+    width: 30rem;
+    height: 20rem;
+    margin: 5% auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.next-con {
+    padding: 20px;
+    justify-content: center;
+    border-radius: 8px;
+    margin: 20px auto;
+    margin-bottom: 4%;
+}
+
+.next-con h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #645c5c;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.next-con p {
+    font-size: 14px;
+    line-height: 1.6;
+    align-items: center;
+    text-align: center;
+    color: #212421;
+}

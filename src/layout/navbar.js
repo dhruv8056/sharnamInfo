@@ -16,7 +16,7 @@ const Navbar = () => {
                     onMouseEnter={() => setIsServicesOpen(true)}
                     onMouseLeave={() => setIsServicesOpen(false)}
                 >
-                    <span>SERVICES ⯆</span>
+                    <span>SERVICES </span>
                     {isServicesOpen && (
                         <div className="services-dropdown">
                             <div className="services-page">
@@ -57,7 +57,7 @@ const Navbar = () => {
                 </li>
             </ul>
             <div className="navbar-actions">
-                <button className="btn">Contact Us</button>
+                <button className="btn" ><Link to='/contact'></Link>Contact Us</button>
                 <button className="btn">Send Your CV</button>
             </div>
 

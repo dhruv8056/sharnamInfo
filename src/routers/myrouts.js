@@ -16,6 +16,7 @@ import Next from '../pages/services/forntend/next';
 import Nuxt from '../pages/services/forntend/nuxt';
 import Webhosting from '../pages/services/webhosting/webhosting';
 import Reactjs from '../pages/services/forntend/reactjs';
+import Contact from '../pages/contact/contact';
 function Myrouts() {
   return (
     <Router>
@@ -25,6 +26,7 @@ function Myrouts() {
           <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home />} />
           <Route path='/company' element={<Company />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/web" element={<Web/>} />
           <Route path="/ecommerce" element={<Ecommerce />} />
           <Route path="/angular" element={<Angular />} />

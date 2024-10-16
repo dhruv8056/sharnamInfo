@@ -34,6 +34,10 @@
     color: white;
     margin-bottom: 10px;
 }
+.se-content a{
+    color: white;
+    text-decoration: none;
+}
 
 .se-content p {
     font-size: 1.2rem;

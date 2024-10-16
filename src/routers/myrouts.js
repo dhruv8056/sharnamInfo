@@ -2,12 +2,18 @@ import React from 'react';
 import '../style/navbar.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import '../style/home.css';
+import '../style/about.css';
 import '../style/footer.css';
+<<<<<<< Updated upstream
 import '../style/contact.css';
 import '../style/about.css';
 import '../style/backend.css';
+=======
+import '../style/company.css';
+>>>>>>> Stashed changes
 import '../style/frontend.css';
-import Company from '../pages/company/company';
+import Mission from '../pages/company/mission';
+import Career from '../pages/company/career';
 import Web from '../pages/services/forntend/web';
 import Navbar from '../layout/navbar';
 import Home from '../pages/home/home';
@@ -21,12 +27,15 @@ import Webhosting from '../pages/services/webhosting/webhosting';
 import Reactjs from '../pages/services/forntend/reactjs';
 import Contact from '../pages/contact/contact';
 import Aboutus from '../pages/aboutus/aboutus ';
+<<<<<<< Updated upstream
 import Nodejs from '../pages/services/back/nodejs';
 import Nestjs from '../pages/services/back/nestjs';
 import Python from '../pages/services/back/python';
 import Php from '../pages/services/back/php';
 import Laravel from '../pages/services/back/laravel';
 
+=======
+>>>>>>> Stashed changes
 function Myrouts() {
   return (
     <Router>
@@ -35,9 +44,16 @@ function Myrouts() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home />} />
+<<<<<<< Updated upstream
           <Route path='/aboutus' element={<Aboutus/>}/>
           <Route path='/company' element={<Company />} />
           <Route path="/contact" element={<Contact />} />
+=======
+          <Route path='/aboutus' element={<Aboutus/>} />
+          <Route path='/mission' element={<Mission />} />
+          <Route path='/career' element={<Career />} />
+          <Route path='/contact' element={<Contact />} />
+>>>>>>> Stashed changes
           <Route path="/web" element={<Web/>} />
           <Route path="/ecommerce" element={<Ecommerce />} />
           <Route path="/angular" element={<Angular />} />

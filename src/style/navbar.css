@@ -27,6 +27,7 @@
   color: black;
   text-decoration: none;
   font-weight: bold;
+
 }
 
 .main-menu a:hover {
@@ -41,9 +42,14 @@
 
 .main-menu span:hover {
   color: #0056b3;
+  cursor: pointer;
 }
 
+<<<<<<< Updated upstream
 /* Dropdown Styles */
+=======
+/*company dropdown*/
+>>>>>>> Stashed changes
 .services-dropdown {
   position: absolute;
   top: 30px;
@@ -169,3 +175,49 @@
 .navbar-actions .btn:hover {
   background-color: #5645e9;
 }
+<<<<<<< Updated upstream
+=======
+
+
+/*company dropdown*/
+.company-dropdown {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 200px;
+  height: 150px;
+  background-color: white;
+  display: flex;
+  padding: 20px;
+
+}
+.company-list {
+  padding: 10px;
+  flex-grow: 2;
+}
+
+.company-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+ 
+
+}
+
+.company-list li {
+  font-size: 16px;
+  margin: 5px 0;
+  font-family: 'Lucida Sans';
+  font-weight: lighter;
+  padding-top: 5px;
+}
+
+.company-list a {
+  color: #5f5050;
+}
+
+.company-list a:hover {
+  color: #0056b3;
+  cursor: pointer;
+}
+>>>>>>> Stashed changes

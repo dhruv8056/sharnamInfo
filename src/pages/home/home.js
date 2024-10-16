@@ -1,6 +1,10 @@
 import React from 'react';
 import logo from '../../assets/img/home-1.png';
 import { useNavigate } from 'react-router-dom';
+<<<<<<< Updated upstream
+=======
+import Marquee from 'react-fast-marquee';
+>>>>>>> Stashed changes
 import py from '../../assets/img/paython.png';
 import { GiBullseye, GiSheikahEye } from "react-icons/gi";
 import { MdOutlineDiversity3, MdSecurity } from "react-icons/md";
@@ -17,11 +21,18 @@ import { useState } from 'react';
 import Help from '../help/help';
 const Home = () => {
     const [activeTab, setActiveTab] = useState('software');
+<<<<<<< Updated upstream
 
     const navigate = useNavigate();
     const handleaboutClick = () => {
         navigate('/aboutus');
     };
+=======
+    const navigate = useNavigate();
+    const handaleaboutclick = () => {
+        navigate('/aboutus');
+    }
+>>>>>>> Stashed changes
     const renderContent = () => {
         switch (activeTab) {
             case 'software':
@@ -106,7 +117,32 @@ const Home = () => {
                         We deliver cutting-edge technology to enhance operational efficiency, coupled with
                         a commitment to <br />reliability and robust security measures.
                     </p>
+<<<<<<< Updated upstream
                     <button className="read-more-btn" onClick={handleaboutClick}>Read More</button>
+=======
+                    <button className='read-more-btn' onClick={handaleaboutclick}>Read More</button>
+                </div>
+
+                <div className="stats-section">
+                    <div className="stats">
+                        <div className="experience">
+                            <GiRibbonMedal className='icon' />
+                            <h2>2+</h2>
+                            <p>Years Experience</p>
+                        </div>
+                        <div className="team">
+                            <RiTeamFill className='icon-team' />
+                            <h2>8+</h2>
+                            <p>Team Members</p>
+                        </div>
+
+                        <div className="project">
+                            <RiFileList3Line className='icon-project' />
+                            <h2>26+</h2>
+                            <p>Projects Done</p>
+                        </div>
+                    </div>
+>>>>>>> Stashed changes
                 </div>
             </div>
             <hr className="nav-line" />

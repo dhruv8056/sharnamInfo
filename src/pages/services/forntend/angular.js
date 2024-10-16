@@ -1,9 +1,9 @@
 import React from 'react'
 import Navbar from '../../../layout/navbar';
 import Footer from '../../../layout/footer';
+import Help from '../../help/help';
 import { FaAngular } from "react-icons/fa";
 import { FaComments, FaTools, FaTachometerAlt } from 'react-icons/fa';
-import Help from '../../help/help';
 import { FaComputer } from 'react-icons/fa6';
 const Angular = () => {
 

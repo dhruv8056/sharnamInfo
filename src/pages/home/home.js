@@ -1,23 +1,27 @@
 import React from 'react';
 import logo from '../../assets/img/home-1.png';
-import Marquee from 'react-fast-marquee';
+import { useNavigate } from 'react-router-dom';
 import py from '../../assets/img/paython.png';
-import { GiRibbonMedal, GiBullseye, GiSheikahEye } from "react-icons/gi";
+import { GiBullseye, GiSheikahEye } from "react-icons/gi";
 import { MdOutlineDiversity3, MdSecurity } from "react-icons/md";
 import { HiOutlineComputerDesktop } from "react-icons/hi2";
 import { GrServices } from "react-icons/gr";
 import { ImMobile } from "react-icons/im";
 import Footer from '../../layout/footer';
-import { RiNextjsLine, RiTeamFill, RiFileList3Line } from "react-icons/ri";
+import { RiNextjsLine } from "react-icons/ri";
 import { SiNestjs, SiTypescript } from "react-icons/si";
 import { FaReact, FaDocker, FaCss3, FaLaptop, FaPhp, FaDatabase, FaAngular, FaNodeJs, FaLaptopCode } from 'react-icons/fa';
 import { FaVuejs, FaLaravel } from 'react-icons/fa';
-import { FaComputer } from 'react-icons/fa6';
+import { FaComputer} from 'react-icons/fa6';
 import { useState } from 'react';
 import Help from '../help/help';
 const Home = () => {
     const [activeTab, setActiveTab] = useState('software');
 
+    const navigate = useNavigate();
+    const handleaboutClick = () => {
+        navigate('/aboutus');
+    };
     const renderContent = () => {
         switch (activeTab) {
             case 'software':
@@ -100,34 +104,12 @@ const Home = () => {
                     <h1>IT Solutions</h1>
                     <p>
                         We deliver cutting-edge technology to enhance operational efficiency, coupled with
-                        a commitment to reliability and robust security measures.
+                        a commitment to <br />reliability and robust security measures.
                     </p>
-                    <button className="read-more-btn">Read More</button>
-                </div>
-
-                <div className="stats-section">
-                    <div className="stats">
-                        <div className="experience">
-                            <GiRibbonMedal className='icon' />
-                            <h2>2+</h2>
-                            <p>Years Experience</p>
-                        </div>
-                        <div className="team">
-                            <RiTeamFill className='icon-team' />
-                            <h2>8+</h2>
-                            <p>Team Members</p>
-                        </div>
-
-                        <div className="project">
-                            <RiFileList3Line className='icon-project' />
-                            <h2>26+</h2>
-                            <p>Projects Done</p>
-                        </div>
-                    </div>
+                    <button className="read-more-btn" onClick={handleaboutClick}>Read More</button>
                 </div>
             </div>
             <hr className="nav-line" />
-
 
 
             {/* expertise*/}
@@ -168,48 +150,46 @@ const Home = () => {
             <hr className="nav-line" />
             { /*offering in technologies*/}
             <div className="container">
-                <div className="image-container">
-                </div>
-                <div className="text-container">
-                    <h2>WHAT WE'RE OFFERING</h2>
-                    <p>Offering a comprehensive range of professional IT services</p>
+                <div className="home-container">
+                    <h1>WHAT WE'RE OFFERING</h1>
+                    <h4>Offering a comprehensive range of professional IT services</h4>
                     <div className='text-strong'>
                         <strong>
                             We are committed to delivering innovative solutions that drive growth, productivity, and success.
                         </strong>
                     </div>
-                    <div className="service-cards">
-                        <div className="service-card">
-                            <FaLaptopCode className="service-icon" />
+                    <div className="home-cards">
+                        <div className="home-card">
+                            <FaLaptopCode className="home-icon" />
                             <h3>Software Development</h3>
                             <p>
                                 We specialize in developing custom software solutions tailored to our clients' unique needs and objectives.
                             </p>
                         </div>
-                        <div className="service-card">
-                            <FaComputer className="service-icon" />
+                        <div className="home-card">
+                            <FaComputer className="home-icon" />
                             <h3>Web <br />Development</h3>
 
                             <p>
                                 We create visually stunning and highly functional websites that are optimized for performance and user experience.
                             </p>
                         </div>
-                        <div className="service-card">
-                            < ImMobile className="service-icon" />
+                        <div className="home-card">
+                            < ImMobile className="home-icon" />
                             <h3>Mobile App Development</h3>
                             <p>
                                 Our team of experienced developers creates custom mobile apps that are optimized for performance and user experience.
                             </p>
                         </div>
-                        <div className="service-card">
-                            <HiOutlineComputerDesktop className="service-icon" />
+                        <div className="home-card">
+                            <HiOutlineComputerDesktop className="home-icon" />
                             <h3>ERP <br />solution</h3>
                             <p>
                                 We provide ERP development services to help businesses streamline their operations, and improve decision-making.
                             </p>
                         </div>
-                        <div className="service-card">
-                            < FaDatabase className="service-icon" />
+                        <div className="home-card">
+                            < FaDatabase className="home-icon" />
                             <h3>DBA <br />services</h3>
                             <p>
                                 We focus on reliable data management that optimises and refines business databases and data systems.
@@ -241,10 +221,9 @@ const Home = () => {
 
             {/*Technology*/}
             <div className="tech-stack-section">
-                <h4> || SERVICES ||</h4>
-                <h3>IT Technologies</h3>
-                <Marquee gradient={true} speed={50} >
-                    <div className="tech-cards-inline">
+                <div className='tech-con'>
+                    <h4 style={{ letterSpacing: '0.2em' }}>OUR   SERVICES</h4>
+                    <div className="tech-cards-cont">
                         <div className="tech-card tech-react">
                             <FaReact />
                             <h3>React</h3>
@@ -304,9 +283,8 @@ const Home = () => {
                             <FaLaravel />
                             <h3>Laravel</h3>
                         </div>
-
                     </div>
-                </Marquee>
+                </div>
             </div>
 
 
@@ -329,10 +307,11 @@ const Home = () => {
                 </div>
             </div>
 
+            
 
             {/*mission card content*/}
             <div className="mission-card">
-                <div className="icon">
+                <div className="micon">
                     <GiBullseye size={100} />
                 </div>
                 <h4 className="title">Our Mission</h4>
@@ -343,9 +322,8 @@ const Home = () => {
                 </p>
             </div>
 
-
             <div className="mission-card">
-                <div className="icon">
+                <div className="micon">
                     <GiSheikahEye size={100} />
                 </div>
                 <h4 className="title">Our Vision</h4>

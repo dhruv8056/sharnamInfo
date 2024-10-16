@@ -1,10 +1,7 @@
 import React from 'react';
 import logo from '../../assets/img/home-1.png';
 import { useNavigate } from 'react-router-dom';
-<<<<<<< Updated upstream
-=======
 import Marquee from 'react-fast-marquee';
->>>>>>> Stashed changes
 import py from '../../assets/img/paython.png';
 import { GiBullseye, GiSheikahEye } from "react-icons/gi";
 import { MdOutlineDiversity3, MdSecurity } from "react-icons/md";
@@ -21,18 +18,10 @@ import { useState } from 'react';
 import Help from '../help/help';
 const Home = () => {
     const [activeTab, setActiveTab] = useState('software');
-<<<<<<< Updated upstream
-
-    const navigate = useNavigate();
-    const handleaboutClick = () => {
-        navigate('/aboutus');
-    };
-=======
     const navigate = useNavigate();
     const handaleaboutclick = () => {
         navigate('/aboutus');
     }
->>>>>>> Stashed changes
     const renderContent = () => {
         switch (activeTab) {
             case 'software':
@@ -117,9 +106,6 @@ const Home = () => {
                         We deliver cutting-edge technology to enhance operational efficiency, coupled with
                         a commitment to <br />reliability and robust security measures.
                     </p>
-<<<<<<< Updated upstream
-                    <button className="read-more-btn" onClick={handleaboutClick}>Read More</button>
-=======
                     <button className='read-more-btn' onClick={handaleaboutclick}>Read More</button>
                 </div>
 
@@ -142,7 +128,6 @@ const Home = () => {
                             <p>Projects Done</p>
                         </div>
                     </div>
->>>>>>> Stashed changes
                 </div>
             </div>
             <hr className="nav-line" />

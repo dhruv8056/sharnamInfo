@@ -1,8 +1,5 @@
 import React, { useState } from 'react'
-<<<<<<< Updated upstream
 import Navbar from '../../layout/navbar';
-=======
->>>>>>> Stashed changes
 import box1 from '../../assets/img/box-1.png';
 import box2 from '../../assets/img/box-2.png';
 import box3 from '../../assets/img/box-3.png';
@@ -27,26 +24,15 @@ const Aboutus = () => {
   return (
 
     <div>
-<<<<<<< Updated upstream
       <div className='se-web'>
         <Navbar />
-=======
-       <div className='se-web'>
-        <Navbar  />
->>>>>>> Stashed changes
       </div>
       <div className="se-section">
         <div className="se-overlay">
           <div className="se-content">
-<<<<<<< Updated upstream
-            <button className="se-button">Nuxt Js Development</button>
-            <h1>Nuxt Js Development</h1>
-            <p>Services - Nuxt development</p>
-=======
             <button className="se-button">About Us </button>
             <h1>About US</h1>
             <a href='/home'>Home</a> - <span>About Us</span>
->>>>>>> Stashed changes
           </div>
         </div>
       </div>

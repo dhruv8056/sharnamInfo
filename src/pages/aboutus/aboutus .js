@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import about from '../../assets/img/about.jpg';
+import Navbar from '../../layout/navbar';
 import box1 from '../../assets/img/box-1.png';
 import box2 from '../../assets/img/box-2.png';
 import box3 from '../../assets/img/box-3.png';
@@ -22,14 +22,19 @@ const Aboutus = () => {
   return (
 
     <div>
-      <div className='image-sections'>
-        <img src={about} alt='about us' className='banner' />
-        <div className="about-text">
-          <h1>About Us</h1>
-          <a href='/home'>Home</a>-
-          <span>About Us</span>
+      <div className='se-web'>
+        <Navbar />
+      </div>
+      <div className="se-section">
+        <div className="se-overlay">
+          <div className="se-content">
+            <button className="se-button">Nuxt Js Development</button>
+            <h1>Nuxt Js Development</h1>
+            <p>Services - Nuxt development</p>
+          </div>
         </div>
       </div>
+
       <div className='about-page-container'>
         <div className='slice-container'>
           <div className='abouts-section'>

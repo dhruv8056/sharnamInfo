@@ -90,7 +90,7 @@ const Next = () => {
 
 
       {/*image set*/}
-      <div className="n-image">
+      <div className="n-next">
         <img src={next2} alt='n2-img' />
       </div>
 

@@ -13,7 +13,7 @@
 .main-menu {
   list-style: none;
   display: flex;
-align-items: flex-end;
+  align-items: flex-end;
   margin-left: 30rem;
   padding: 0;
 }
@@ -28,7 +28,8 @@ align-items: flex-end;
   text-decoration: none;
   font-weight: bold;
 }
-.main-menu a:hover{
+
+.main-menu a:hover {
   color: #0056b3;
 }
 
@@ -37,21 +38,21 @@ align-items: flex-end;
   text-decoration: none;
   font-weight: bold;
 }
-.main-menu span:hover{
+
+.main-menu span:hover {
   color: #0056b3;
 }
 
 /* Dropdown Styles */
-/* Dropdown Container */
 .services-dropdown {
- position: absolute;
- top: 30px;
- left: 0;
+  position: absolute;
+  top: 30px;
+  left: 0;
   width: 800px;
   height: 400px;
   background-color: white;
   display: flex;
-  padding: 20px;  
+  padding: 20px;
   z-index: 1000;
 }
 
@@ -62,11 +63,12 @@ align-items: flex-end;
 }
 
 /* Services List */
-.services-container{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+.services-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
+
 .services-list {
   padding: 20px;
   flex-grow: 1;
@@ -74,7 +76,7 @@ align-items: flex-end;
 
 .services-list h3 {
   margin-top: 0;
- color: #0056b3;
+  color: #0056b3;
   font-size: 20px;
 }
 
@@ -84,23 +86,32 @@ align-items: flex-end;
   font-size: 16px;
 }
 
+.services-list h5 {
+  color: black;
+  margin-top: 40px;
+  font-size: 16px;
+}
+
 .services-list ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.services-list li{
+
+.services-list li {
   font-size: 12px;
   margin: 5px 0;
   font-family: 'Lucida Sans';
 }
-.services-list a{
+
+.services-list a {
   color: #5f5050;
 }
 
-.services-list a:hover{
+.services-list a:hover {
   color: #0056b3;
 }
+
 .services-list ul {
   margin: 5px 0;
   font-size: 14px;
@@ -121,7 +132,6 @@ align-items: flex-end;
   text-decoration: underline;
 }
 
-/* Commitment Section */
 .commitment-section {
   width: 150px;
   text-align: center;
@@ -159,5 +169,3 @@ align-items: flex-end;
 .navbar-actions .btn:hover {
   background-color: #5645e9;
 }
-
-

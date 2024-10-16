@@ -68,7 +68,7 @@ const Reactjs = () => {
         <div className=' react-app'>
           {services.map((service, index) => (
             <div key={index} className="react-card">
-              <div className="react-icon">{service.icon}</div>
+              <div className="rr-icon">{service.icon}</div>
               <h3 className="react-title">{service.title}</h3>
               <p className="react-description">{service.description}</p>
             </div>
@@ -118,7 +118,7 @@ const Reactjs = () => {
 
         <h2 className="r-title">
           <span className="js-text">Js</span>
-          <span className="react-icon">
+          <span className="rr-icon">
             <FaReact className="r-icon" color="#0056b3" />
           </span>
           <span className="r-text">React</span>

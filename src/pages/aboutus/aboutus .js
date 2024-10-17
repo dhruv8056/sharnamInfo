@@ -15,6 +15,7 @@ import { SiCssdesignawards } from "react-icons/si";
 import { FaConnectdevelop } from "react-icons/fa";
 import { MdLaunch } from "react-icons/md";
 import about1 from '../../assets/img/about1.jpg';
+import Footer from '../../layout/footer';
 
 const Aboutus = () => {
   const [counterState, setCounterState] = useState(false);
@@ -28,9 +29,9 @@ const Aboutus = () => {
       <div className="se-section">
         <div className="se-overlay">
           <div className="se-content">
-            <button className="se-button">Nuxt Js Development</button>
-            <h1>Nuxt Js Development</h1>
-            <p>Services - Nuxt development</p>
+            <button className="se-button">About Us </button>
+            <h1>About US</h1>
+            <a href='/home'>Home</a> - <span>About Us</span>
           </div>
         </div>
       </div>
@@ -45,24 +46,44 @@ const Aboutus = () => {
             <h2>Clients all across the world have put their trust in us.</h2>
             <p>Sharnam info provides software, website, development, and other services to satisfy clients needs and enhance their customer relation management needs. Sharnam info provides quality services and maintains a high standard for development.</p>
           </div>
+
+          <ScrollTrigger onEnter={() => setCounterState(true)} onExit={() => setCounterState(false)}>
+
           <div className='row-container'>
             <div className='client-count'>
-              <span>15 +</span>
-              <h4>Happy Clients</h4>
+              <h2>{counterState &&
+              <CountUp
+                start={0}
+                end={15}
+                duration={2.50}>
+              </CountUp>}+</h2>
+              <p>Happy Clients</p>
             </div>
             <div className='client-count'>
-              <span>26 +</span>
-              <h4>Project Done</h4>
+              <h2>{counterState &&
+              <CountUp
+                start={0}
+                end={26}
+                duration={2.50}>
+              </CountUp>}+</h2>
+              <p>Project Done</p>
             </div>
 
             <div className='client-count'>
-              <span>8 +</span>
-              <h4>Skilled Experts</h4>
+              <h2>{counterState &&
+              <CountUp
+                start={0}
+                end={8}
+                duration={2.50}>
+              </CountUp>}+</h2>
+              <p>Skilled Experts</p>
             </div>
           </div>
-        </div>
+          </ScrollTrigger>
+          </div>
+     
 
-        <div className='box-section'>
+       
           <div className='box-containers'>
 
             <div className='box1'>
@@ -88,7 +109,7 @@ const Aboutus = () => {
               <div className='image-text'>Our Stratagy</div>
             </div>
           </div>
-        </div>
+          
       </div>
 
       <div className='pro-header'>
@@ -120,6 +141,40 @@ const Aboutus = () => {
         </div>
       </div>
 
+      <ScrollTrigger onEnter={() => setCounterState(true)} onExit={() => setCounterState(false)}>
+        <div className='counter-area'>
+
+          <div className='counter-list'>
+            <h2> {counterState &&
+              <CountUp
+                start={0}
+                end={26}
+                duration={2.50}>
+              </CountUp>}+</h2>
+            <p>Finished Projects</p>
+          </div>
+          <div className='counter-list'>
+            <h2>
+              {counterState &&
+                <CountUp
+                  start={0}
+                  end={15}
+                  duration={2.50}>
+                </CountUp>}+</h2>
+            <p>Happy Clients</p>
+          </div>
+          <div className='counter-list'>
+            <h2> {counterState &&
+              <CountUp
+                start={0}
+                end={2}
+                duration={2.50}>
+              </CountUp>} +</h2>
+            <p>Years of experience</p>
+          </div>
+        </div>
+      </ScrollTrigger>
+
       <div className='about-section'>
         <img src={about1} alt='about us' className='banner' />
         <div className='abouts-text'>
@@ -141,47 +196,15 @@ const Aboutus = () => {
         </div>
       </div>
 
-      <ScrollTrigger onEnter={() => setCounterState(true)} onExit={() => setCounterState(false)}>
-        <div className='counter-area'>
-
-          <div className='counter-list'>
-            <h2> {counterState &&
-              <CountUp
-                start={0}
-                end={26}
-                duration={2.50}>
-              </CountUp>}+</h2>
-            <p>Finished Projects</p>
-          </div>
-          <div className='counter-list'>
-            <h2>
-              {counterState &&
-                <CountUp
-                  start={0}
-                  end={15}
-                  duration={2.50}>
-                </CountUp>}</h2>
-            <p>Happy Clients</p>
-          </div>
-          <div className='counter-list'>
-            <h2> {counterState &&
-              <CountUp
-                start={0}
-                end={5}
-                duration={2.50}>
-              </CountUp>} +</h2>
-            <p>Years of experience</p>
-          </div>
-        </div>
-      </ScrollTrigger>
+    
       <div className='connects'>
-        <h2>Let's start a
+        <h3>Let's start a
           <span> Cool Project </span>
           <br />
           With
           <span> Sharnam </span>
           Infotech
-        </h2>
+        </h3>
       </div>
       <div className='sub-conatiner'>
         <a href='/contact'>
@@ -189,6 +212,7 @@ const Aboutus = () => {
         </a>
 
       </div>
+      <Footer />
     </div>
 
   );

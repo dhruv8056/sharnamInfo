@@ -1,0 +1,225 @@
+
+.missions-card {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px #0000001a;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.mission-image {
+  max-width: 600px;
+  background-color: white;
+  object-fit: cover;
+}
+
+.mission-content, .vision-content, .value-content {
+  margin-bottom: 20px;
+}
+.mission-content p, .vision-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: black;
+    margin: 10px 0;
+  }
+  
+  .value-content ul {
+  
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.mission-content p, .vision-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: black;
+  margin: 10px 0;
+}
+
+.value-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.value-content ul li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+
+/*career page */
+
+.careers {
+  margin: 50px;
+  display: flex;
+  overflow: hidden;
+ 
+}
+.career-image{
+    width: 120%;
+    height: 70%;
+    margin:10px;
+    margin-top: 90px;
+}
+
+.career-contain {
+  flex: 1;
+}
+
+.career-contents {
+  flex: 2;
+  top: 0;
+  padding-left: 70px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  padding-top: -13px;
+  margin: 80px;
+}
+
+
+.career-contents span {
+  color: #2b6a9e;
+}
+.career-contents p{
+    margin-top: 10px;
+}
+
+.ca-icon {
+  color: #2b6a9e;
+  font-size: 70px;
+  flex: 1;
+}
+.careers-text {
+  flex: 2;
+  top: 0;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.latest-contain {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.hire-process {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+.hire-process h2 {
+  font-size: 36px;
+  color: #333;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.hire-steps {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
+  justify-content: center;
+
+}
+
+.hire-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #0000001a;
+  width: calc(20% - 10px);
+  transition: background-color 0.5s ease-in-out;
+
+}
+
+.hire-step:hover{
+    cursor: pointer;
+    background-color: #86aecf;
+}
+
+.hire-step p{
+    font-weight: 400;
+}
+
+.h-icon{
+  color: #2b6a9e;
+  font-size: 40px;
+}
+
+/*faq page*/
+
+
+.fa-section {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+.fa-section h3{
+  color: #2b6a9e;
+}
+    
+.fa-section h2 {
+  font-size: 36px;
+  color: #333;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.faq-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.faq-steps {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-step {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.faq-step:hover {
+  background-color: #f7f7f7;
+}
+
+.faq-icon {
+  color: #2b6a9e;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.faq-step h3 {  
+  margin: 0;
+  color: #333;
+}
+
+.faq-step p {
+  margin-top: 10px;
+  color: #555;
+}               

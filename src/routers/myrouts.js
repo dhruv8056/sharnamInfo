@@ -2,12 +2,16 @@ import React from 'react';
 import '../style/navbar.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import '../style/home.css';
+import '../style/about.css';
 import '../style/footer.css';
 import '../style/contact.css';
 import '../style/about.css';
 import '../style/backend.css';
+import '../style/company.css';
 import '../style/frontend.css';
-import Company from '../pages/company/company';
+import Mission from '../pages/company/mission';
+import Career from '../pages/company/career';
+import Faq from '../pages/company/faq';
 import Web from '../pages/services/forntend/web';
 import Navbar from '../layout/navbar';
 import Home from '../pages/home/home';
@@ -35,9 +39,11 @@ function Myrouts() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home />} />
-          <Route path='/aboutus' element={<Aboutus/>}/>
-          <Route path='/company' element={<Company />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path='/aboutus' element={<Aboutus/>} />
+          <Route path='/mission' element={<Mission />} />
+          <Route path='/career' element={<Career />} />
+          <Route path='/faq' element={<Faq />} />
+          <Route path='/contact' element={<Contact />} />
           <Route path="/web" element={<Web/>} />
           <Route path="/ecommerce" element={<Ecommerce />} />
           <Route path="/angular" element={<Angular />} />

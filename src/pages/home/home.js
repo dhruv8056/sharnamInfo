@@ -17,11 +17,10 @@ import { useState } from 'react';
 import Help from '../help/help';
 const Home = () => {
     const [activeTab, setActiveTab] = useState('software');
-
     const navigate = useNavigate();
-    const handleaboutClick = () => {
+    const handaleaboutclick = () => {
         navigate('/aboutus');
-    };
+    }
     const renderContent = () => {
         switch (activeTab) {
             case 'software':
@@ -106,9 +105,10 @@ const Home = () => {
                         We deliver cutting-edge technology to enhance operational efficiency, coupled with
                         a commitment to <br />reliability and robust security measures.
                     </p>
-                    <button className="read-more-btn" onClick={handleaboutClick}>Read More</button>
+                    <button className='read-more-btn' onClick={handaleaboutclick}>Read More</button>
                 </div>
-            </div>
+
+                            </div>
             <hr className="nav-line" />
 
 
@@ -149,7 +149,7 @@ const Home = () => {
 
             <hr className="nav-line" />
             { /*offering in technologies*/}
-            <div className="container">
+            <div className="h-container">
                 <div className="home-container">
                     <h1>WHAT WE'RE OFFERING</h1>
                     <h4>Offering a comprehensive range of professional IT services</h4>

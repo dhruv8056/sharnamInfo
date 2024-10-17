@@ -15,7 +15,6 @@ import { SiCssdesignawards } from "react-icons/si";
 import { FaConnectdevelop } from "react-icons/fa";
 import { MdLaunch } from "react-icons/md";
 import about1 from '../../assets/img/about1.jpg';
-import Navbar from '../../layout/navbar';
 import Footer from '../../layout/footer';
 
 const Aboutus = () => {
@@ -57,7 +56,6 @@ const Aboutus = () => {
                 start={0}
                 end={15}
                 duration={2.50}>
-                delay={1}
               </CountUp>}+</h2>
               <p>Happy Clients</p>
             </div>

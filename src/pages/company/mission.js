@@ -1,24 +1,12 @@
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Navbar from '../../layout/navbar';
 import logo from '../../assets/img/missions.jpg';
 import Footer from '../../layout/footer';
 
 
 const Mission = () => {
-  const [scrollPosition, setScrollPosition] = useState(0);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollPosition(window.scrollY);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   return (
     <div>
@@ -39,21 +27,21 @@ const Mission = () => {
         <div className="image-container">
           <img src={logo} alt="mission" className="mission-image" />
         </div>
-        <div className={`mission-content ${scrollPosition > 500 ? 'animate' : ''}`}>
+        <div className='mission-content'>
           <h4>Our Mission:</h4>
           <p>
             Our mission is to empower individuals and organizations to achieve their full potential by providing innovative solutions and exceptional service.
           </p>
         </div>
 
-        <div className={`vision-content ${scrollPosition > 800 ? 'animate' : ''}`}>
+        <div className='vision-content'>
           <h4>Our Vision:</h4>
           <p>
             Our vision is to be a leading provider of innovative solutions that make a positive impact on people's lives.
           </p>
         </div>
 
-        <div className={`value-content ${scrollPosition > 1000 ? 'animate' : ''}`}>
+        <div className='value-content'>
           <h4>Values:</h4>
           <ul>
             <li>Integrity: We operate with transparency and honesty in all our interactions.</li>

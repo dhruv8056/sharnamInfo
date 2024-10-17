@@ -8,9 +8,7 @@ import { TiStopwatch } from "react-icons/ti";
 import { MdOutlineModelTraining } from "react-icons/md";
 import { FaAward } from "react-icons/fa";
 import { RiTeamFill } from "react-icons/ri";
-
-
-
+import Footer from '../../layout/footer';
 
 
 const Career = () => {
@@ -103,9 +101,8 @@ const Career = () => {
         <h3>Team building</h3>
           <p>Indoor & outdoor team building workshops and activities.</p>
         </div>
-
-
-</div>
+      </div>
+      <Footer/>
     </div>
   )
 }

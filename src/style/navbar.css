@@ -45,11 +45,7 @@
   cursor: pointer;
 }
 
-<<<<<<< Updated upstream
 /* Dropdown Styles */
-=======
-/*company dropdown*/
->>>>>>> Stashed changes
 .services-dropdown {
   position: absolute;
   top: 30px;
@@ -175,8 +171,6 @@
 .navbar-actions .btn:hover {
   background-color: #5645e9;
 }
-<<<<<<< Updated upstream
-=======
 
 
 /*company dropdown*/
@@ -220,4 +214,3 @@
   color: #0056b3;
   cursor: pointer;
 }
->>>>>>> Stashed changes

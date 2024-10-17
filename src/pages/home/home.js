@@ -1,7 +1,6 @@
 import React from 'react';
 import logo from '../../assets/img/home-1.png';
 import { useNavigate } from 'react-router-dom';
-import Marquee from 'react-fast-marquee';
 import py from '../../assets/img/paython.png';
 import { GiBullseye, GiSheikahEye } from "react-icons/gi";
 import { MdOutlineDiversity3, MdSecurity } from "react-icons/md";
@@ -109,27 +108,7 @@ const Home = () => {
                     <button className='read-more-btn' onClick={handaleaboutclick}>Read More</button>
                 </div>
 
-                <div className="stats-section">
-                    <div className="stats">
-                        <div className="experience">
-                            <GiRibbonMedal className='icon' />
-                            <h2>2+</h2>
-                            <p>Years Experience</p>
-                        </div>
-                        <div className="team">
-                            <RiTeamFill className='icon-team' />
-                            <h2>8+</h2>
-                            <p>Team Members</p>
-                        </div>
-
-                        <div className="project">
-                            <RiFileList3Line className='icon-project' />
-                            <h2>26+</h2>
-                            <p>Projects Done</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                            </div>
             <hr className="nav-line" />
 
 
@@ -170,7 +149,7 @@ const Home = () => {
 
             <hr className="nav-line" />
             { /*offering in technologies*/}
-            <div className="container">
+            <div className="h-container">
                 <div className="home-container">
                     <h1>WHAT WE'RE OFFERING</h1>
                     <h4>Offering a comprehensive range of professional IT services</h4>

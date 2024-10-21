@@ -625,6 +625,32 @@ h1 {
 }
 
 
+.scrollup {
+  position: fixed;
+  right: 20px;
+  width: 40px;
+  bottom: 50px;
+  line-height: 36px;
+  z-index: 1000;
+  cursor: pointer;
+  transform: translateY(100%);
+}
+
+.scrollup.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.up-icon {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #1a76b8;
+}
+
+
 /* Mobile styles */
 @media (max-width: 768px) {
   .hero-section {
@@ -783,4 +809,5 @@ h1 {
     font-size: 0.9em;
   }
 }
+
 

@@ -13,7 +13,8 @@ import { SiNestjs, SiTypescript } from "react-icons/si";
 import { FaReact, FaDocker, FaCss3, FaLaptop, FaPhp, FaDatabase, FaAngular, FaNodeJs, FaLaptopCode } from 'react-icons/fa';
 import { FaVuejs, FaLaravel } from 'react-icons/fa';
 import { FaComputer} from 'react-icons/fa6';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
+import { FaAngleUp } from "react-icons/fa6";
 import Help from '../help/help';
 const Home = () => {
     const [activeTab, setActiveTab] = useState('software');
@@ -21,6 +22,17 @@ const Home = () => {
     const handaleaboutclick = () => {
         navigate('/aboutus');
     }
+    const [showScrollUp, setShowScrollUp] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 200) {
+        setShowScrollUp(true);
+      } else {
+        setShowScrollUp(false);
+      }
+    });
+  }, []);
     const renderContent = () => {
         switch (activeTab) {
             case 'software':
@@ -338,7 +350,17 @@ const Home = () => {
             <Help />
             <hr className="nav-line" />
             <Footer />
-
+            <div className='scrollup'>
+        {showScrollUp && (
+          <div className='up-icon'>
+            <FaAngleUp 
+            onClick={() => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+            />
+          </div>
+        )}
+      </div>
         </div >
     );
 };

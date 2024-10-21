@@ -1,10 +1,6 @@
 import React from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { FaInstagram, FaLinkedinIn, FaPhone, FaEnvelope, FaMapMarkerAlt, FaArrowAltCircleRight } from 'react-icons/fa';
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -34,7 +30,6 @@ const Footer = () => {
         <div className="footer-middle">
           <h3>Company</h3>
           <ul>
-<<<<<<< Updated upstream
             <li>
               <FaArrowAltCircleRight color='white' />
               <Link to='/aboutus'>About Us</Link>
@@ -51,19 +46,12 @@ const Footer = () => {
               <FaArrowAltCircleRight color='white' />
               <Link to='/contact'>Contact</Link>
             </li>
-=======
-            <li><FaArrowAltCircleRight color='white' /><a href="/aboutus" className="learn-more"> About Us</a></li>
-            <li><FaArrowAltCircleRight color='white' /> Our Team</li>
-            <li><FaArrowAltCircleRight color='white' /> Careers</li>
-            <li><FaArrowAltCircleRight color='white' /><a href="/contact" className="learn-more"> Contact Us</a></li>
->>>>>>> Stashed changes
           </ul>
         </div>
 
         <div className="footer-right">
           <h3>Services</h3>
           <ul>
-<<<<<<< Updated upstream
             <li>
               <FaArrowAltCircleRight color='white' />
               <Link to='/web'>Web Development</Link>
@@ -80,15 +68,6 @@ const Footer = () => {
               <FaArrowAltCircleRight color='white' />
               <Link to='/next'>NextJS Development</Link>
             </li>
-=======
-            <li><FaArrowAltCircleRight color='white' /><a href="/web" className="learn-more"> Web Development</a></li>
-            <li><FaArrowAltCircleRight color='white' /><a href="/ecommerce" className="learn-more"> E-commerce Development</a></li>
-            <li><FaArrowAltCircleRight color='white' /><a href="/reactjs" className="learn-more"> ReactJs Development</a></li>
-            <li><FaArrowAltCircleRight color='white' /><a href="/nodejs" className="learn-more"> NodeJs Development</a></li>
-            <li><FaArrowAltCircleRight color='white' /><a href="/python" className="learn-more"> Python Development</a></li>
-            <li><FaArrowAltCircleRight color='white' /><a href="/webhosting" className="learn-more"> web Hosting</a></li>
-
->>>>>>> Stashed changes
           </ul>
         </div>
       </div>

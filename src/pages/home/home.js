@@ -8,10 +8,10 @@ import { GrServices } from "react-icons/gr";
 import { ImMobile } from "react-icons/im";
 import { RiNextjsLine } from "react-icons/ri";
 import { SiNestjs, SiTypescript } from "react-icons/si";
-import { FaReact, FaDocker, FaCss3, FaLaptop, FaPhp, FaDatabase, FaAngular, FaNodeJs, FaLaptopCode } from 'react-icons/fa';
+import { FaReact, FaDocker, FaCss3, FaLaptop, FaPhp, FaDatabase, FaAngular, FaNodeJs, FaLaptopCode, FaCogs, FaClipboardList } from 'react-icons/fa';
 import { FaVuejs, FaLaravel } from 'react-icons/fa';
-import { FaComputer} from 'react-icons/fa6';
-import { useState,useEffect } from 'react';
+import { FaComputer } from 'react-icons/fa6';
+import { useEffect } from 'react';
 import { FaAngleUp } from "react-icons/fa6";
 import Help from '../help/help';
 import { motion } from 'framer-motion';
@@ -24,16 +24,37 @@ const Home = () => {
         navigate('/aboutus');
     }
     const [showScrollUp, setShowScrollUp] = useState(false);
-
-  useEffect(() => {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 200) {
-        setShowScrollUp(true);
-      } else {
-        setShowScrollUp(false);
-      }
-    });
-  }, []);
+    const steps = [
+        {
+            icon: <i className="fa fa-lightbulb"></i>,
+            title: "Planning",
+            description: "We gather requirements, analyze the project, and create a detailed plan.",
+        },
+        {
+            icon: <i className="fa fa-pencil-ruler"></i>,
+            title: "Design",
+            description: "Our team creates prototypes and designs based on the plan.",
+        },
+        {
+            icon: <i className="fa fa-code"></i>,
+            title: "Development",
+            description: "We start coding the project, ensuring all functionalities work as required.",
+        },
+        {
+            icon: <i className="fa fa-rocket"></i>,
+            title: "Launch",
+            description: "After rigorous testing, we deploy the project live and monitor its performance.",
+        },
+    ];
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                setShowScrollUp(true);
+            } else {
+                setShowScrollUp(false);
+            }
+        });
+    }, []);
     const renderContent = () => {
         switch (activeTab) {
             case 'software':
@@ -121,7 +142,7 @@ const Home = () => {
                     <button className='read-more-btn' onClick={handaleaboutclick}>Read More</button>
                 </div>
 
-                            </div>
+            </div>
             <hr className="nav-line" />
 
             <section className="hm-section">
@@ -295,7 +316,7 @@ const Home = () => {
                             <h3>Docker</h3>
                         </div>
                         <div className="tech-card tech-next">
-                     
+
                             <RiNextjsLine />
                             <h3>Next.js</h3>
                         </div>
@@ -402,16 +423,16 @@ const Home = () => {
             <hr className="nav-line" />
             <Footer />
             <div className='scrollup'>
-        {showScrollUp && (
-          <div className='up-icon'>
-            <FaAngleUp 
-            onClick={() => {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-              }}
-            />
-          </div>
-        )}
-      </div>
+                {showScrollUp && (
+                    <div className='up-icon'>
+                        <FaAngleUp
+                            onClick={() => {
+                                window.scrollTo({ top: 0, behavior: 'smooth' });
+                            }}
+                        />
+                    </div>
+                )}
+            </div>
         </div >
     );
 };

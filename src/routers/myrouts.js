@@ -9,12 +9,9 @@ import '../style/about.css';
 import '../style/backend.css';
 import '../style/company.css';
 import '../style/frontend.css';
-<<<<<<< Updated upstream
 import Mission from '../pages/company/mission';
 import Career from '../pages/company/career';
 import Faq from '../pages/company/faq';
-=======
->>>>>>> Stashed changes
 import Web from '../pages/services/forntend/web';
 import Navbar from '../layout/navbar';
 import Home from '../pages/home/home';
@@ -42,16 +39,11 @@ function Myrouts() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home />} />
-<<<<<<< Updated upstream
           <Route path='/aboutus' element={<Aboutus/>} />
           <Route path='/mission' element={<Mission />} />
           <Route path='/career' element={<Career />} />
           <Route path='/faq' element={<Faq />} />
           <Route path='/contact' element={<Contact />} />
-=======
-          <Route path='/aboutus' element={<Aboutus/>}/>
-          <Route path="/contact" element={<Contact />} />
->>>>>>> Stashed changes
           <Route path="/web" element={<Web/>} />
           <Route path="/ecommerce" element={<Ecommerce />} />
           <Route path="/angular" element={<Angular />} />

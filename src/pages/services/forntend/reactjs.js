@@ -5,6 +5,8 @@ import { FaRegCheckCircle, FaSearch, FaLightbulb, FaDesktop, FaRocket } from 're
 import Footer from '../../../layout/footer';
 import react1 from '../../../assets/img/react1.png'
 import Help from '../../help/help';
+import { motion } from 'framer-motion';
+import { FadeIn } from '../../../layout/varient';
 const Reactjs = () => {
   const services = [
     {
@@ -48,7 +50,7 @@ const Reactjs = () => {
       <div className="se-section">
         <div className="se-overlay">
           <div className="se-content">
-            <button className="se-button">React Js Development</button>
+            <button className="se-button">React Development</button>
             <h1>React Js Development</h1>
             <p>Services- React Js development</p>
           </div>
@@ -59,13 +61,18 @@ const Reactjs = () => {
       {/*react services*/}
       <div className="react-container">
 
-        <h2>React Js services</h2>
+        <h2>ReactJs services</h2>
         <div className='r-p'>
           <p>Our ReactJS development services cover a comprehensive range of <br />solutions tailored to meet
             diverse business requirements.
             We specialize in building high-quality, efficient, and scalable<br /> web applications using ReactJS. </p>
         </div>
-        <div className=' react-app'>
+        <motion.div
+          variants={FadeIn("up", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.5 }}
+          className=' react-app'>
           {services.map((service, index) => (
             <div key={index} className="react-card">
               <div className="rr-icon">{service.icon}</div>
@@ -73,14 +80,19 @@ const Reactjs = () => {
               <p className="react-description">{service.description}</p>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
 
-     
+
       {/* image */}
       <div className='react-image'>
         <img src={react1} alt='react-img' className='react-image__img' />
-        <div className='react-image__content'>
+        <motion.div
+          variants={FadeIn("left", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.5 }}
+          className='react-image__content'>
           <h1>ReactJs Development</h1>
           <p>
             React development refers to the process of building user interfaces (UIs) and web applications
@@ -90,12 +102,12 @@ const Reactjs = () => {
           <h3>Key Features:</h3>
           <ul>
             <li>Component-Based Architecture</li>
-            <li>Virtual DOM for optimal performance</li>
+            <li>Virtual DOM for optimal performance</li>    
             <li>Declarative UI for predictable coding</li>
             <li>Unidirectional data flow for easier data management</li>
             <li>Hooks for using state and lifecycle features in functional components</li>
           </ul>
-        </div>
+        </motion.div>
       </div>
 
 
@@ -153,7 +165,7 @@ const Reactjs = () => {
 
       <Help />
       <Footer />
-    </div>
+    </div >
 
   )
 }

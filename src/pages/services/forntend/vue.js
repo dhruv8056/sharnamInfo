@@ -5,6 +5,8 @@ import Help from '../../help/help';
 import { FaClipboardCheck, FaMobileAlt, FaVuejs } from 'react-icons/fa';
 import { TbDeviceDesktopCog, TbDeviceImacCode } from "react-icons/tb";
 import vue1 from '../../../assets/img/vue1.png';
+import { motion } from 'framer-motion';
+import { FadeIn } from '../../../layout/varient';
 const Vue = () => {
 
   const services = [
@@ -50,20 +52,33 @@ const Vue = () => {
       {/*vuejs services*/}
       <div className="vue-container">
         <h1> VueJS Development services</h1>
-        <div className="vue-card-container">
+        <motion.div
+          variants={FadeIn("up", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.5 }} className="vue-card-container">
           {services.map((service, index) => (
             <div className="vue-card" key={index}>
-              <div className="vue-icon">{service.icon}</div>
+              <div
+                className="vue-icon">{service.icon}
+              </div>
               <h3 className="vue-title">{service.title}</h3>
               <p className="vue-description">{service.description}</p>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
 
       {/*sets image of vue*/}
       <div className='vue-image'>
-        <img src={vue1} alt='vue-img' className='vue-img' />
+        <motion.div
+          variants={FadeIn("down", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.5 }}>
+          <img src={vue1} alt='vue-img' className='vue-img' />
+        </motion.div>
+
         <h2 className='vue-h2'>OUR EXPERTISE</h2>
         <p className='vue-p'>
           Scale Your Business by Leveraging Our Robust Services

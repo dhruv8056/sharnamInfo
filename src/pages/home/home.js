@@ -1,5 +1,4 @@
-import React from 'react';
-import logo from '../../assets/img/home-1.png';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import py from '../../assets/img/paython.png';
 import { GiBullseye, GiSheikahEye } from "react-icons/gi";
@@ -7,15 +6,17 @@ import { MdOutlineDiversity3, MdSecurity } from "react-icons/md";
 import { HiOutlineComputerDesktop } from "react-icons/hi2";
 import { GrServices } from "react-icons/gr";
 import { ImMobile } from "react-icons/im";
-import Footer from '../../layout/footer';
 import { RiNextjsLine } from "react-icons/ri";
 import { SiNestjs, SiTypescript } from "react-icons/si";
-import { FaReact, FaDocker, FaCss3, FaLaptop, FaPhp, FaDatabase, FaAngular, FaNodeJs, FaLaptopCode } from 'react-icons/fa';
+import { FaReact, FaDocker, FaCss3, FaLaptop, FaPhp, FaDatabase, FaAngular, FaNodeJs, FaLaptopCode, FaCogs, FaClipboardList } from 'react-icons/fa';
 import { FaVuejs, FaLaravel } from 'react-icons/fa';
-import { FaComputer} from 'react-icons/fa6';
-import { useState,useEffect } from 'react';
+import { FaComputer } from 'react-icons/fa6';
+import { useEffect } from 'react';
 import { FaAngleUp } from "react-icons/fa6";
 import Help from '../help/help';
+import { motion } from 'framer-motion';
+import Footer from '../../layout/footer';
+import { FadeIn } from '../../../src/layout/varient';
 const Home = () => {
     const [activeTab, setActiveTab] = useState('software');
     const navigate = useNavigate();
@@ -23,16 +24,37 @@ const Home = () => {
         navigate('/aboutus');
     }
     const [showScrollUp, setShowScrollUp] = useState(false);
-
-  useEffect(() => {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 200) {
-        setShowScrollUp(true);
-      } else {
-        setShowScrollUp(false);
-      }
-    });
-  }, []);
+    const steps = [
+        {
+            icon: <i className="fa fa-lightbulb"></i>,
+            title: "Planning",
+            description: "We gather requirements, analyze the project, and create a detailed plan.",
+        },
+        {
+            icon: <i className="fa fa-pencil-ruler"></i>,
+            title: "Design",
+            description: "Our team creates prototypes and designs based on the plan.",
+        },
+        {
+            icon: <i className="fa fa-code"></i>,
+            title: "Development",
+            description: "We start coding the project, ensuring all functionalities work as required.",
+        },
+        {
+            icon: <i className="fa fa-rocket"></i>,
+            title: "Launch",
+            description: "After rigorous testing, we deploy the project live and monitor its performance.",
+        },
+    ];
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                setShowScrollUp(true);
+            } else {
+                setShowScrollUp(false);
+            }
+        });
+    }, []);
     const renderContent = () => {
         switch (activeTab) {
             case 'software':
@@ -120,9 +142,50 @@ const Home = () => {
                     <button className='read-more-btn' onClick={handaleaboutclick}>Read More</button>
                 </div>
 
-                            </div>
+            </div>
             <hr className="nav-line" />
 
+            <section className="hm-section">
+                <div className="hm-container">
+                    <div className="hm-box">
+                        <div className="hm-icon">
+                            <FaCogs />
+                        </div>
+                        <div className="hm-content">
+                            <div className="hm-number">
+                                <span className="hm-box-number"> 01</span>
+                            </div>
+                            <h3 className="hm-title">Planning and Strategy</h3>
+                            <p className="hm-description"></p>
+                        </div>
+                    </div>
+                    <div className="hm-box">
+                        <div className="hm-icon">
+                            <FaClipboardList />
+                        </div>
+                        <div className="hm-content">
+                            <div className="hm-number">
+                                <span className="hm-box-number">02</span>
+                            </div>
+                            <h3 className="hm-title">Development and Integration</h3>
+                            <p className="hm-description"></p>
+                        </div>
+                    </div>
+
+                    <div className="hm-box">
+                        <div className="hm-icon">
+                            <FaComputer />
+                        </div>
+                        <div className="hm-content">
+                            <div className="hm-number">
+                                <span className="hm-box-number">03</span>
+                            </div>
+                            <h3 className="hm-title">Testing and Deployment</h3>
+                            <p className="hm-description"></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             {/* expertise*/}
             <div className="cards-section">
@@ -170,10 +233,14 @@ const Home = () => {
                             We are committed to delivering innovative solutions that drive growth, productivity, and success.
                         </strong>
                     </div>
-                    <div className="home-cards">
+                    <motion.div
+                        variants={FadeIn("down", 0.4)}
+                        initial="hidden"
+                        whileInView={"show"}
+                        viewport={{ once: false, amount: 0.5 }} className="home-cards">
                         <div className="home-card">
                             <FaLaptopCode className="home-icon" />
-                            <h3>Software Development</h3>
+                            <h3>Software<br /> Development</h3>
                             <p>
                                 We specialize in developing custom software solutions tailored to our clients' unique needs and objectives.
                             </p>
@@ -188,7 +255,7 @@ const Home = () => {
                         </div>
                         <div className="home-card">
                             < ImMobile className="home-icon" />
-                            <h3>Mobile App Development</h3>
+                            <h3>Mobile App<br /> Development</h3>
                             <p>
                                 Our team of experienced developers creates custom mobile apps that are optimized for performance and user experience.
                             </p>
@@ -208,7 +275,7 @@ const Home = () => {
                             </p>
                         </div>
 
-                    </div>
+                    </motion.div>
                 </div>
             </div>
 
@@ -223,7 +290,6 @@ const Home = () => {
                     <button className={`tab-btn ${activeTab === 'erp' ? 'active' : ''}`} onClick={() => setActiveTab('erp')}>ERP Solutions</button>
                     <button className={`tab-btn ${activeTab === 'dba' ? 'active' : ''}`} onClick={() => setActiveTab('dba')}>DBA Services</button>
                 </div>
-
                 <div className="tab-content-container">
                     {renderContent()}
                 </div>
@@ -234,134 +300,139 @@ const Home = () => {
             {/*Technology*/}
             <div className="tech-stack-section">
                 <div className='tech-con'>
-                    <h4 style={{ letterSpacing: '0.2em' }}>OUR   SERVICES</h4>
+                    <h4 style={{ letterSpacing: '0.2em' }}>OUR SERVICES</h4>
+
                     <div className="tech-cards-cont">
                         <div className="tech-card tech-react">
                             <FaReact />
                             <h3>React</h3>
                         </div>
-
                         <div className="tech-card tech-node">
                             <FaNodeJs />
                             <h3>Node.js</h3>
                         </div>
-
                         <div className="tech-card tech-docker">
                             <FaDocker />
                             <h3>Docker</h3>
                         </div>
-
                         <div className="tech-card tech-next">
-                     
+
                             <RiNextjsLine />
                             <h3>Next.js</h3>
                         </div>
-
                         <div className="tech-card tech-css">
                             <FaCss3 />
                             <h3>Css</h3>
                         </div>
-
                         <div className="tech-card tech-nestjs">
                             <SiNestjs />
                             <h3>Nest.js</h3>
                         </div>
-
                         <div className="tech-card tech-php">
                             <FaPhp />
                             <h3>Php</h3>
                         </div>
-
                         <div className="tech-card tech-angular">
                             <FaAngular />
                             <h3>Angular</h3>
                         </div>
-
                         <div className="tech-card tech-vuejs">
                             <FaVuejs />
-                            <h3>vue.js</h3>
+                            <h3>Vue.js</h3>
                         </div>
-
                         <div className="tech-card tech-python">
                             <img src={py} alt="IT Solutions" className="python" />
                             <h3>Python</h3>
                         </div>
-
-                        <div className="tech-card tech-typscript">
+                        <div className="tech-card tech-type">
                             <SiTypescript />
-                            <h3>Typscript</h3>
+                            <h3>TypeScript</h3>
                         </div>
-
                         <div className="tech-card tech-laravel">
                             <FaLaravel />
                             <h3>Laravel</h3>
                         </div>
                     </div>
+
                 </div>
             </div>
 
+            {/*process*/}
+            <section className="p-section">
+                <h2 className="p-title" style={{ letterSpacing: '0.2em' }}>OUR PROCESS</h2>
+                <p className="p-subtitle">
+                    Take a general look at the process that we use when implementing a new project.
+                </p>
+                <motion.div
+                    variants={FadeIn("down", 0.4)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.5 }} className="p-steps">
+                    {steps.map((step, index) => (
+                        <div className="p-step" key={index}>
+                            <div className="icon-p">
+                                {step.icon}
+                            </div>
+                            <h3>{step.title}</h3>
+                            <p>{step.description}</p>
+                        </div>
+                    ))}
+                </motion.div>
+            </section>
 
-
-            { /*maind set image and content*/}
-            <hr className="nav-line" />
-            <div className="mindset-card">
-                <div className="image-container">
-                    <img src={logo} alt="Person overlooking a city" className="mindset-image" />
-                </div>
-                <div className="mindser-contant">
-                    <h4 >| Mindset |</h4>
-                    <h2>Empowering Innovation: Fueling Tomorrow's <br />Tech Today</h2>
-                    <p>
-                        This mindset emphasizes the IT company's commitment to driving innovation and staying at the forefront of technological advancements.
-                        It communicates a forward-thinking approach, encouraging clients to partner with a company that is dedicated to creating cutting-edge solutions.
-                        It reflects a culture of continuous improvement, adaptability, and a passion for leveraging technology to empower clients and shape the future of the digital landscape.
-                    </p>
-                    <hr className="nav-line" />
-                </div>
-            </div>
-
-            
 
             {/*mission card content*/}
             <div className="mission-card">
                 <div className="micon">
                     <GiBullseye size={100} />
                 </div>
-                <h4 className="title">Our Mission</h4>
-                <p className="description">
-                    Our mission is to provide innovative technology solutions that enable businesses to thrive in today's
-                    fast-paced and ever-changing world. We are committed to delivering exceptional service and support,
-                    and to building long-term partnerships based on trust and mutual success.
-                </p>
+                <motion.div
+                    variants={FadeIn("down", 0.4)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.5 }} >
+                    <h4 className="title">Our Mission</h4>
+                    <p className="description">
+                        Our mission is to provide innovative technology solutions that enable businesses to thrive
+                        in today's fast-paced and ever-changing world. <br />We are committed to delivering exceptional
+                        service and support,and to building long-term partnerships based on trust and mutual success.
+                    </p>
+                </motion.div>
             </div>
 
             <div className="mission-card">
                 <div className="micon">
                     <GiSheikahEye size={100} />
                 </div>
-                <h4 className="title">Our Vision</h4>
-                <p className="description">
-                    Our vision is to be the leading provider of innovative technology solutions that drive growth and
-                    success for businesses worldwide.
-                    We strive to be at the forefront of emerging technologies,
-                    and to deliver exceptional value and service to our clients.
-                </p>
+                <motion.div
+                    variants={FadeIn("down", 0.4)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.5 }}>
+                    <h4 className="title">Our Vision</h4>
+                    <p className="description">
+                        Our vision is to be the leading provider of innovative technology solutions that
+                        drive growth and success for businesses worldwide.<br />
+                        We strive to be at the forefront of emerging technologies,
+                        and to deliver exceptional value and service to our clients.
+                    </p>
+                </motion.div>
             </div>
 
             <Help />
             <hr className="nav-line" />
             <Footer />
             <div className='scrollup'>
-        {showScrollUp && (
-          <div className='up-icon'>
-            <FaAngleUp 
-            onClick={() => {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-              }}
-            />
-          </div>
-        )}
-      </div>
+                {showScrollUp && (
+                    <div className='up-icon'>
+                        <FaAngleUp
+                            onClick={() => {
+                                window.scrollTo({ top: 0, behavior: 'smooth' });
+                            }}
+                        />
+                    </div>
+                )}
+            </div>
         </div >
     );
 };

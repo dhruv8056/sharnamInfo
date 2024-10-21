@@ -8,6 +8,8 @@ import { MdOutlineSupportAgent } from "react-icons/md";
 import { FiDatabase, FiRefreshCcw, FiLayers, FiBox } from 'react-icons/fi';
 import { FaComputer } from 'react-icons/fa6';
 import { BsDatabaseFillGear } from 'react-icons/bs';
+import { motion } from 'framer-motion';
+import { FadeIn } from '../../../layout/varient';
 const Typescript = () => {
     const servicesData = [
         {
@@ -40,11 +42,11 @@ const Typescript = () => {
             icon: <FiDatabase />
         },
         {
-            title: 'Migration from JavaScript to TypeScript',  
+            title: 'Migration from JavaScript to TypeScript',
             description: 'Converting existing JavaScript codebases to TypeScript to improve type safety and code quality. Refactoring code for better maintainability and performance.',
-            icon: <FiRefreshCcw /> 
-        },   
-        {    
+            icon: <FiRefreshCcw />
+        },
+        {
             title: 'Backend Development with Node.js',
             description: 'Developing server-side applications with TypeScript and Node.js for efficient handling of data and business logic.',
             icon: <BsDatabaseFillGear />
@@ -108,7 +110,12 @@ const Typescript = () => {
             {/*services typescript*/}
             <div className='ty-main'>
                 <h1>TypeScript services</h1>
-                <div className="services-ty">
+                <motion.div
+                    variants={FadeIn("down", 0.4)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.5 }}
+                    className="services-ty">
                     {services.map((service, index) => (
                         <div key={index} className="service-card-ty">
                             <div className="icon-ty">{service.icon}</div>
@@ -116,7 +123,7 @@ const Typescript = () => {
                             <p>{service.description}</p>
                         </div>
                     ))}
-                </div>
+                </motion.div>
             </div>
 
             {/*image sets*/}

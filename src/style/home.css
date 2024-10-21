@@ -17,61 +17,73 @@ body {
 
 }
 
-/* Hero Section */
-.hero-section {
-  padding: 50px 40px;
+/* Home Section */
+.home-section {
+  margin-top: auto;
+  width: 100%;
+  height: 80vh;
+  background-image: url('../assets/img/home-2.png');
+  background-size: cover;
+  background-position: center;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 10%;
 }
 
-.hero-content {
+.home-overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5, 107, 202, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-content {
   margin-top: 5%;
   flex: 1;
-  margin-right: 20px;
+  align-items: center;
+  margin-left: 40px;
+  text-align: center;
 }
 
-.hero-content h5 {
-  font-size: 1.5rem;
+.home-content h5 {
+  font-size: 3rem;
   letter-spacing: 0.2rem;
-  color: #0056b3;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
 }
 
-.hero-content h6 {
+.home-content h6 {
   font-size: 1rem;
   letter-spacing: 0.1rem;
   margin-bottom: 15px;
-  color: #0056b3;
+  color: white;
 }
 
-.hero-content h2 {
+.home-content h2 {
   margin-top: 30px;
-  font-size: 1.8rem;
-  line-height: 1.4;
-  color: #000;
-  margin-bottom: 20px;
-}
-
-.hero-content h1 {
-  font-size: 2rem;
-  line-height: 1.4;
-  color: #000;
-  margin-bottom: 20px;
-}
-
-.hero-content p {
   font-size: 1rem;
-  color: #666;
-  margin-bottom: 30px;
+  line-height: 1.4;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.home-content h1 {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: white;
+  margin-bottom: 20px;
 }
 
 .read-more-btn {
   padding: 10px 20px;
   font-size: 1rem;
-  background-color: #0056b3;
-  color: white;
+  background-color: #ffffff;
+  color: #0056b3;
   border: none;
   cursor: pointer;
   border-radius: 5px;
@@ -80,15 +92,14 @@ body {
 
 .read-more-btn:hover {
   background-color: #0056b3;
-  color: #000;
+  color: #ffffff;
 }
 
 /*expertise*/
-
 .cards-section {
   margin-top: 10%;
   text-align: center;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 .cards-section h2 {
@@ -153,7 +164,7 @@ body {
 /* Offering section */
 .container {
   display: flex;
-  margin-top: 15%;
+  margin-top: 10%;
   padding: 40px;
   justify-content: space-between;
   margin: 50px 0;
@@ -162,7 +173,7 @@ body {
 .home-container h1 {
   font-size: 2rem;
   margin-left: 20px;
-  color: #5a6df8;
+  color: #0056b3;
 }
 
 .home-container h4 {
@@ -173,7 +184,7 @@ body {
 
 
 .text-strong strong {
-  font-size: 1em;
+  font-size: 13px;
   color: #333;
   margin-left: 20px;
 }
@@ -187,7 +198,7 @@ body {
 
 .home-card {
   margin-top: 20px;
-  background-color: #f9f9f9;
+  background-color: white;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -197,14 +208,19 @@ body {
 
 
 .home-icon {
-  font-size: 40px;
   margin-right: 90%;
-  color: #175699;
   margin-bottom: 15px;
+  background-color: #f4f4f4;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  color: rgb(49, 40, 175);
+  font-size: 1rem;
 }
 
 .home-card h3 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: left;
   margin-bottom: 10px;
 }
@@ -217,8 +233,6 @@ body {
 }
 
 
-
-
 /* Technology section */
 .tech-stack-section {
   padding: 40px 50px;
@@ -228,17 +242,17 @@ body {
 
 .tech-con h4 {
   font-size: 14px;
-  color: #0b6fda;
+  color: #0056b3;
   font-family: 'Lucida Sans';
   margin-bottom: 3%;
 }
 
-
 .tech-cards-cont {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   gap: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: scroll 20s linear infinite;
 }
 
 .tech-card {
@@ -305,7 +319,7 @@ body {
   color: #42b883;
 }
 
-.tech-typscript {
+.tech-type {
   font-size: 3rem;
   color: #3178C6;
 }
@@ -325,10 +339,7 @@ body {
   height: 50px;
 }
 
-
-
 .services-container {
-
   background-size: cover;
   background-position: center;
   position: relative;
@@ -363,30 +374,11 @@ p {
 }
 
 
-/* Section and Heading Styles */
-.services-section {
-  text-align: center;
-  padding: 2rem;
-}
-
-.services-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #333;
-}
-
-.services-section h3 {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  color: #666;
-}
-
 
 /* Tabs Container */
 .tabs-container {
   max-width: 1200px;
-  margin: 0 auto;
-  margin-top: 10%;
+  margin: auto;
   padding: 20px;
   text-align: center;
 }
@@ -420,7 +412,7 @@ h1 {
   cursor: pointer;
   border-radius: 10px;
   transition: background-color 0.3s;
-  font-size: 1rem;
+  font-size: 14px;
 }
 
 .tab-btn:hover {
@@ -472,73 +464,76 @@ h1 {
 
 .tab-icon {
   font-size: 2rem;
+  color: rgb(49, 40, 175);
+  margin-bottom: 10px;
+}
+
+/*our process */
+.p-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.p-title {
+  margin-top: 5%;
+  font-size: 14px;
   color: #0056b3;
+  font-family: 'Lucida Sans';
+}
+
+.p-subtitle {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.p-steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.p-step {
+  width: 200px;
+  text-align: center;
+}
+
+.icon-p {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px;
+  border: 2px solid #ccc;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  color: #0056b3;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.p-step h3 {
+  font-size: 18px;
   margin-bottom: 10px;
 }
 
 
-/*image sets*/
-.mindset-card {
-  display: flex;
-  overflow: hidden;
-  background-color: #000000;
-  border-radius: 12px;
-  padding: 20px;
-  color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 1000px;
-  height: 450Px;
-  margin: auto;
+.icon-p:hover {
+  border: 2px solid #0056b3;
 }
 
-.image-container {
-  flex: 1;
-}
-
-.mindset-image {
-  max-width: 525px;
-  margin-top: 30px;
-  background-color: white;
-  border-radius: 12px;
-  object-fit: cover;
-}
-
-.mindser-contant {
-  flex: 2;
-  top: 0;
-  padding-left: 30px;
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-}
-
-.mindser-contant h4 {
-  font-size: 22px;
-  font-weight: 70px;
-}
-
-.mindser-contant h2 {
-  font-size: 18px;
-  margin: 10px 0;
-  line-height: 1.2;
-}
-
-.nav-line {
-  margin-bottom: 40px;
-}
-
-.mindser-contant p {
+.p-step p {
   font-size: 14px;
-  line-height: 1.6;
-  color: #ffffff;
-  margin: 10px 0;
-  margin-right: 20px;
+  color: #666;
+
 }
+
 
 
 
 /*help section*/
-.help-section {
+.h-help-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -549,22 +544,22 @@ h1 {
   width: 70%;
   background-color: white;
   border-radius: 10px;
-  margin-bottom: 10%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.question-mark {
+.h-help-mark {
   font-size: 50px;
   color: #007bff;
   margin-bottom: 15px;
 }
 
-.text h2 {
+.h-help h2 {
   font-size: 20px;
+  color: #333;
   margin-bottom: 10px;
 }
 
-.text p {
+.h-help p {
   font-size: 14px;
   line-height: 1.5;
   margin-bottom: 15px;
@@ -596,7 +591,7 @@ h1 {
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 70%;
-  margin: 80px auto;
+  margin: 50px auto;
 }
 
 .micon {
@@ -620,6 +615,7 @@ h1 {
   font-size: 14px;
   margin-left: 20%;
   margin-right: 20%;
+  text-align: center;
   align-items: center;
   line-height: 1.6;
 }

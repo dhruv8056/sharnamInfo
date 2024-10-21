@@ -180,7 +180,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-     
+
       <Footer />
       <div className='scrollup'>
         {showScrollUp && (

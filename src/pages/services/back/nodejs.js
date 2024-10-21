@@ -9,6 +9,8 @@ import Help from '../../help/help';
 import { FaNodeJs } from 'react-icons/fa';
 import { FaComputer } from 'react-icons/fa6';
 import { MdOutlineAddToDrive } from 'react-icons/md';
+import { motion } from 'framer-motion';
+import { FadeIn } from '../../../layout/varient';
 const Nodejs = () => {
   const reasons = [
     { icon: <FaChrome />, title: 'Built on Google V8 JavaScript Engine' },
@@ -34,7 +36,7 @@ const Nodejs = () => {
           </div>
         </div>
       </div>
-    
+
 
       <div className='node-content'>
         <div className='node-se'>
@@ -46,7 +48,11 @@ const Nodejs = () => {
             Our experience in Node.js development guarantees optimal results, making us a reliable choice for your programming needs.<br />
           </p>
         </div>
-        <div className='node-list'>
+        <motion.div
+          variants={FadeIn("down", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.5 }} className='node-list'>
           <div className='node-item'>
             <FaFolderOpen className='ne-icon' />
             <h2>Bundle of Libraries</h2>
@@ -77,7 +83,7 @@ const Nodejs = () => {
             <h2>Front-End & Back-end Development</h2>
             <p>Being a JavaScript-based technology, it fastens both front-end and back-end applications.</p>
           </div>
-        </div>
+        </motion.div>
       </div>
 
 
@@ -85,17 +91,25 @@ const Nodejs = () => {
         <h2>Some More Reasons to Build </h2>
         <h1>Your Applications In Node.js</h1>
         <div className='content-wrapper'>
-          <div className='reasons-list'>
+          <motion.div
+            variants={FadeIn("left", 0.4)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.5 }} className='reasons-list'>
             {reasons.map((reason, index) => (
               <div className='reason-card' key={index}>
                 <div className='reason-icon'>{reason.icon}</div>
                 <h3>{reason.title}</h3>
               </div>
             ))}
-          </div>
-          <div className='node-img'>
+          </motion.div>
+          <motion.div
+            variants={FadeIn("right", 0.4)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.5 }} className='node-img'>
             <img src={node1} alt='node-i'></img>
-          </div>
+          </motion.div>
         </div>
       </div>
 

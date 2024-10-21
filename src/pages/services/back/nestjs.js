@@ -4,6 +4,8 @@ import { SiNestjs } from "react-icons/si";
 import next1 from '../../../assets/img/nest1.png';
 import Footer from '../../../layout/footer';
 import Help from '../../help/help';
+import { motion } from 'framer-motion';
+import { FadeIn } from '../../../layout/varient';
 const Nestjs = () => {
 
   return (
@@ -21,7 +23,11 @@ const Nestjs = () => {
         </div>
       </div>
 
-      <div className='nest-info'>
+      <motion.div
+        variants={FadeIn("down", 0.4)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.5 }} className='nest-info'>
         <h1>
           NestJS Development Services
         </h1>
@@ -33,9 +39,10 @@ const Nestjs = () => {
           Our development team has used NestJS in many web development projects and knows how to make the most of this incredibly versatile framework.<br />
           Team up with us to unlock the value of your web app with the help of our expertise in NestJS.
         </h2>
-      </div>
+      </motion.div>
       {/*images and contants*/}
       <div className='nest-contents'>
+
         <img src={next1} alt='next-i' className='nest-image' />
         <div className="nestjs-features">
           <h2>Nest Development Services</h2>

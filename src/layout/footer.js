@@ -25,8 +25,8 @@ const Footer = () => {
               <FaLinkedinIn className="social-icon" />
             </a>
           </div>
-        </div>
-
+        </div>                                        
+                                                     
         <div className="footer-middle">
           <h3>Company</h3>
           <ul>

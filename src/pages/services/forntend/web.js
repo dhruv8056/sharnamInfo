@@ -7,6 +7,8 @@ import Help from '../../help/help';
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { AiOutlinePython } from "react-icons/ai";
 import { HiOutlineComputerDesktop } from "react-icons/hi2";
+import { motion } from 'framer-motion';
+import { FadeIn } from '../../../layout/varient';
 const Web = () => {
     const services = [
         {
@@ -95,7 +97,12 @@ const Web = () => {
                 <p>Utilize our dependable processes to accelerate delivery across various technology stacks. <br />
                     Let's discuss how we can assist you.</p>
 
-                <div className="web-services-grid">
+                <motion.div
+                    variants={FadeIn("down", 0.4)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.5 }}
+                    className="web-services-grid">
                     {services.map((service, index) => (
                         <div className="web-service-card" key={index}>
                             <div className="web-dservice-icon">{service.icon}</div>
@@ -103,7 +110,7 @@ const Web = () => {
                             <p>{service.description}</p>
                         </div>
                     ))}
-                </div>
+                </motion.div>
             </div>
 
             {/*image sets*/}
@@ -111,8 +118,8 @@ const Web = () => {
                 <div className="img-overlay">
                     <div className='img-con'>
                         <h1>Web - Development<br /></h1>
-                        <p> web deblopment It involves a combination of various <br/>tasks 
-                            and technologies to build <br/>the functionality, design, and 
+                        <p> web deblopment It involves a combination of various <br />tasks
+                            and technologies to build <br />the functionality, design, and
                             interactivity of websites.</p>
                     </div>
                 </div>

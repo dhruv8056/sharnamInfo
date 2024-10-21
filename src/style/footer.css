@@ -1,5 +1,5 @@
 .footer {
-    margin-top: 20px;
+    margin-top: 10px;
     background-color: #0056b3;
     padding: 50px;
     font-family: Arial, sans-serif;
@@ -93,7 +93,10 @@
     text-decoration: none;
     color: #ffffff;
 }
-
+.footer-middle a{
+    text-decoration: none;
+    color: #ffffff;
+}
 .footer-right ul {
     margin: 5px 0;
     font-size: 14px;

@@ -9,6 +9,9 @@ import { GiUpgrade } from "react-icons/gi";
 import { TbDeviceImacCog } from "react-icons/tb";
 import Help from '../../help/help';
 import { FaComputer } from 'react-icons/fa6';
+import { motion } from 'framer-motion';
+import { FadeIn } from '../../../layout/varient';
+import { RiNextjsLine } from 'react-icons/ri';
 const Next = () => {
   const services = [
     {
@@ -60,21 +63,29 @@ const Next = () => {
 
 
       {/*next js description*/}
-      <div className='next-con'>
+      <motion.div
+        variants={FadeIn("down", 0.4)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.5 }} className='next-con'>
         <h1>Next.js Development</h1>
         <p>'
-          We prioritize quality work that meets industry standards,<br/> ensuring top-notch service
-          from our experienced team of software developers.<br/> Our developers possess a variety of technical
+          We prioritize quality work that meets industry standards,<br /> ensuring top-notch service
+          from our experienced team of software developers.<br /> Our developers possess a variety of technical
           skills, including expertise in Python, React, Node.js, Next.js,
           TailwindCSS.'
         </p>
-      </div>
+      </motion.div>
 
 
       {/* Next.js */}
       <div className='next-image'>
         <img src={next1} alt='Next.js development' className='next-image__img' />
-        <div className='next__content'>
+        <motion.div
+          variants={FadeIn("up", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.5 }} className='next__content'>
           <h1>Next.js Development</h1>
           <p>Why Choose Next.js Development:</p>
           <ul>
@@ -85,7 +96,7 @@ const Next = () => {
             <li>Integration & maintenance</li>
             <li>Highly scalable</li>
           </ul>
-        </div>
+        </motion.div>
       </div>
 
 
@@ -103,13 +114,17 @@ const Next = () => {
         </div>
         <div className="next-grid">
           {services.map((service, index) => (
-            <div className="next-card" key={index}>
+            <motion.div
+              variants={FadeIn("down", 0.4)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.5 }} className="next-card" key={index}>
               <div className="icon">
                 {service.icon}
               </div>
               <h3>{service.title}</h3>
               <p>{service.description}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
@@ -118,6 +133,7 @@ const Next = () => {
       <div className="img-background-container">
         <div className="img-overlay">
           <div className='img-con'>
+            <RiNextjsLine size={30} />
             <h1>Next Js - Development<br /></h1>
             <p> Our custom Next JS development <br />services are tailored to meet your specific requirements.</p>
           </div>

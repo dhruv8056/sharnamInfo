@@ -182,6 +182,7 @@
 
 .navbar-actions .btn:hover {
   background-color: #5645e9;
+<<<<<<< Updated upstream
 }
 
 
@@ -326,4 +327,6 @@
   display: flex;
   z-index: 1000;
   padding: 20px;
+=======
+>>>>>>> Stashed changes
 }

@@ -35,6 +35,11 @@
     justify-content: space-around;
 }
 
+.node-item:hover {
+    border: 1px solid #0932eb;
+
+}
+
 .node-item {
     background-color: #fff;
     border-radius: 8px;
@@ -47,9 +52,7 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.node-item:hover {
-    background-color: #4095f0;
-}
+
 
 .node-item h2 {
     font-size: 16px;
@@ -63,13 +66,17 @@
     line-height: 1.4;
 }
 
-.node-item:hover .ne-icon {
-    color: #0e0e0f;
-}
+
 
 .ne-icon {
-    font-size: 2rem;
-    color: #007bff;
+    font-size: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 50%;
+    padding: 10px;
+    color: rgb(49, 40, 175);
+    width: 50px;
+    height: 40px;
+
 
 }
 
@@ -123,9 +130,13 @@
 }
 
 .reason-icon {
-    font-size: 2rem;
-    color: #1f6ec2;
-    margin-bottom: 10px;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    color: rgb(49, 40, 175);
+    font-size: 1.5rem;
 }
 
 .reasons-list h3 {
@@ -152,7 +163,6 @@
     padding: 5% 10%;
     align-items: flex-start;
     margin: 5% auto;
-
 }
 
 .nest-image {
@@ -238,7 +248,7 @@
 /*php development css*/
 
 .php-team-container {
-    padding: 2rem;
+    padding: 5% 5%;
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -248,24 +258,22 @@
 
 .php-team-container h2 {
     font-size: 1.3rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     font-family: 'Lucida Sans';
     text-align: left;
-    color: #2c52f8;
+    color: rgb(49, 40, 175)
 }
 
 .php-team-container h4 {
     font-size: 14px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     text-align: left;
     color: #1c1d24;
 }
 
-
 .php-team-content-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 2rem;
 }
 
@@ -273,17 +281,22 @@
     background-color: #fff;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    padding: 1.5rem;
+    padding: 20px;
     width: 300px;
+    align-items: flex-start;
     transition: transform 0.2s;
     text-align: left;
 }
 
+.ph-icon {
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    color: rgb(49, 40, 175);
+    font-size: 1.5rem;
 
-.php-icon {
-    font-size: 2rem;
-    color: #007bff;
-    margin-bottom: 1rem;
 }
 
 .php-team-content h3 {
@@ -294,6 +307,521 @@
 
 .php-team-content p {
     color: #555;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.6;
+}
+
+/*services php*/
+.php-services-container {
+    display: flex;
+    background-color: #f9f9f9;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5%;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.php-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.php-img img {
+    width: 250px;
+    margin-top: 5rem;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.php-services {
+    max-width: 700px;
+}
+
+.php-services h2 {
+    margin-bottom: 5%;
+    font-size: 2rem;
+    font-family: 'Lucida Sans';
+}
+
+.php-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.php-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.php-card:hover {
+    background-color: rgb(241, 242, 247);
+    border-color: #8fa9c5;
+}
+
+.php-icon {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #eff6fa;
+    color: rgb(49, 40, 175);
+    margin: 0 auto 10px auto;
+    font-size: 1.5rem;
+}
+
+.php-card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+.php-card p {
+    font-size: 13px;
+    color: #555;
+}
+
+/* Laravel development css*/
+.laravel-development {
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 4%;
+
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.l-con h1 {
+    font-size: 1.1rem;
+    color: #333;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 20px;
+}
+
+.l-con h2 {
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.l-con p {
+    font-size: 13px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-bottom: 3%;
+}
+
+.skill-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    width: 200px;
+}
+
+.skill-card .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #eff6fa;
+    color: rgb(49, 40, 175);
+    margin: 0 auto 10px auto;
+    font-size: 1.5rem;
+}
+
+.skill-card h3 {
+    font-size: 1rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.skill-card p {
+    font-size: 13px;
+    color: #666;
+}
+
+.l-img {
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.l-img img {
+
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+}
+
+/*srvices*/
+.laravel-services {
+    padding: 20px;
+    margin-bottom: 3%;
+    border-radius: 8px;
+
+}
+
+.laravel-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.laravel-header-image {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.laravel-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.laravel-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10%;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.laravel-card:hover {
+    background-color: #77b1ee;
+    border-color: #4082d8;
+}
+
+.laravel-card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.laravel-title {
+    font-size: 18px;
+    color: #424547;
+    margin-bottom: 10px;
+}
+
+.laravel-description {
+    font-size: 13px;
+    color: #555;
+}
+
+/*python*/
+.py-info {
+    padding: 2rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    display: flex;
+    margin: 2rem auto;
+}
+
+.py-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.py-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.py-image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.py-image {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+
+}
+
+/*services*/
+.python-main {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px auto;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+.python-services {
+    flex: 2;
+
+}
+
+.python-services h2 {
+    font-size: 1.5rem;
+    color: #333;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.python-services h5 {
+    font-size: 13px;
+    color: rgb(49, 40, 175);
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.py-cards {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+}
+
+.py-card {
+    flex: 1 1 calc(40% - 20px);
+    background-color: #fff;
+    padding: 1.5rem;
+    gap: 15px;
+    border-radius: 8px;
+    border: 1px solid #b7b4c7;
+    text-align: left;
+    max-width: 250px;
+}
+
+.py-card:hover {
+    background-color: #77b1ee;
+    border-color: #4082d8;
+}
+
+.py-icon {
+    font-size: 2rem;
+    color: rgb(49, 40, 175);
+    margin-bottom: 1rem;
+}
+
+.py-card h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.py-card p {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.py-smage {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.py-s-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/*web hosting*/
+.h-services {
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 5%;
+
+}
+
+.h-services h1 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.h-services h2 {
+    font-size: 1rem;
+    color: rgb(49, 40, 175);
+    font-family: 'Lucida Sans';
+    margin-bottom: 40px;
+}
+
+.hosting-services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.hosting-services {
+    background-color: white;
+    border-radius: 10px;
+    max-width: 300px;
+    padding: 30px;
+    gap: 20px;
+    flex: 1 1 calc(33.33% - 50px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.host-i {
+    font-size: 2rem;
+    color: rgb(49, 40, 175);
+    margin-bottom: 15px;
+}
+
+.hosting-services h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.hosting-services p {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.host-pic {
+    margin: auto;
+    width: 100%;
+    height: 70vh;
+    background-image: url('../assets/img/web_h2.png');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5%;
+
+}
+
+.host-weboverlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(57, 44, 240, 0.5);
+    display: flex;
+    justify-content: center;
+    border-radius: 0%;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.host-icon h1 {
+    font-size: 3rem;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .h-services {
+        padding: 20px 10px;
+    }
+
+    .hosting-services {
+        max-width: 100%;
+    }
+
+    .h-services h1 {
+        font-size: 2rem;
+    }
+
+    .h-services h2 {
+        font-size: 1.5rem;
+    }
+
+    .host-i {
+        font-size: 2.5rem;
+    }
+
+    .hosting-services h3 {
+        font-size: 1.25rem;
+    }
+
+    .hosting-services p {
+        font-size: 0.9rem;
+    }
+}
+
+
+/*Responsive Media Queries*/
+@media (max-width: 768px) {
+    .node-item {
+        width: calc(100% - 2rem);
+    }
+
+    .reasons-list {
+        grid-template-columns: 1fr;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .php-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .php-team-content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .node-se h1 {
+        font-size: 2rem;
+    }
+
+    .node-se p,
+    .node-item h2,
+    .node-item p {
+        font-size: 12px;
+    }
+
+    .nest-image {
+        width: 100%;
+    }
+
+    .reason-card {
+        max-width: 100%;
+    }
 }

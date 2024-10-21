@@ -6,6 +6,9 @@ import nuxt2 from '../../../assets/img/nuxt2.png';
 import { FaStar, FaHandshake, FaHeadset } from 'react-icons/fa';
 import { GiCogsplosion } from "react-icons/gi";
 import Help from '../../help/help';
+import { motion } from 'framer-motion';
+import { FadeIn } from '../../../layout/varient';
+import { TbBrandNuxt } from 'react-icons/tb';
 const Nuxt = () => {
   return (
 
@@ -36,7 +39,12 @@ const Nuxt = () => {
           </p>
           <h1>Develop Powerful Nuxt Js Websites With The Most Efficient </h1>
           <p>With years of expertise in designing scalable apps, our Android Developers use high-rated Nuxt JS development services:</p>
-          <div className="n-cards">
+          <motion.div
+            variants={FadeIn("left", 0.4)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.5 }}
+            className="n-cards">
             <div className="n-card">
               <FaStar className="n-icon" />
               <h3>Customer Satisfaction</h3>
@@ -53,19 +61,31 @@ const Nuxt = () => {
               <GiCogsplosion className="n-icon" />
               <h3>Flexible Engagement Models</h3>
             </div>
-          </div>
+          </motion.div>
         </div>
-        <div className="n-image">
+        <motion.div
+          variants={FadeIn("right", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.5 }} className="n-image">
           <img src={nuxt1} alt="Nuxt Js Service Illustration" />
-        </div>
+        </motion.div>
       </div>
 
       {/*description*/}
       <div className='nuxt-describs'>
-        <div className='nt-img'>
+        <motion.div
+          variants={FadeIn("down", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.5 }} className='nt-img'>
           <img src={nuxt2} alt='n-i'></img>
-        </div>
-        <div className='n-des'>
+        </motion.div>
+        <motion.div
+          variants={FadeIn("right", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.5 }} className='n-des'>
           <h1>Nuxt.js: The Perfect Blend of Performance and Functionality for Web Application Development.</h1>
           <p>Nuxt.js is a robust, open-source framework for building web applications using Vue.js. It provides a
             unique blend of performance and functionality, making it the
@@ -74,13 +94,14 @@ const Nuxt = () => {
             and your users' needs. The built-in server-side rendering capabilities improve the performance and
             speed of your application, especially in terms of SEO and page load time.</p>
 
-        </div>
+        </motion.div>
       </div>
 
       {/*image sets*/}
       <div className="img-background-container">
         <div className="img-overlay">
           <div className='img-con'>
+            <TbBrandNuxt  size={30}/>
             <h1>Nuxt Js- Development<br /></h1>
             <p> Our custom NuxtJS development <br />services are tailored to meet your specific requirements.</p>
           </div>

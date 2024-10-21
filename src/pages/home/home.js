@@ -252,6 +252,7 @@ const Home = () => {
                         </div>
 
                         <div className="tech-card tech-next">
+                     
                             <RiNextjsLine />
                             <h3>Next.js</h3>
                         </div>

@@ -22,9 +22,8 @@ const Navbar = () => {
   return (
     <div>
       <nav className="navbar">
-        <button className="menu-toggle" onClick={toggleMenu}><FaBars />
-
-          {isMenuOpen ? 'Close' : 'Menu'}
+        <button className="menu-toggle" onClick={toggleMenu}><FaBars /> 
+        {isMenuOpen ? 'Close' : 'Menu'}
         </button>
         <ul className={`main-menu ${isMenuOpen ? 'open' : ''}`}>
           <li><Link to="/home">HOME</Link></li>
@@ -35,7 +34,7 @@ const Navbar = () => {
           >
             <span>COMPANY <FaAngleDown size={15} /></span>
             {isCompanyOpen && (
-              <div className="company-dropdown">
+              <div className="company-dropdown">  
                 <div className="company-list">
                   <ul>
                     <li><Link to='/mission'>Our Mission</Link></li>

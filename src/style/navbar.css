@@ -1,13 +1,25 @@
 /* Navbar Styles */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
   align-items: center;
   position: fixed;
   width: 100%;
   padding: 10px 20px;
   background-color: white;
 
+}
+.navbar {
+  padding: 10px 20px;    
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .main-menu {
@@ -213,4 +225,105 @@
 .company-list a:hover {
   color: #0056b3;
   cursor: pointer;
+}
+
+/*/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: white;
+  z-index: 1000; /* Ensure navbar is on top */
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  display: none; /* Hide by default */
+}
+
+.main-menu {
+  list-style: none;
+  display: flex;
+  align-items: flex-end;
+  margin-left: 30rem;
+  padding: 0;
+}
+
+.main-menu li {
+  margin: 0 15px;
+  position: relative;
+}
+
+.main-menu a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-menu a:hover {
+  color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Show hamburger icon on mobile */
+  }
+
+  .main-menu {  padding: 20px;
+
+    display: none; /* Hide menu by default on mobile */
+    flex-direction: column; /* Stack items vertically */
+    position: absolute;
+    top: 60px; /* Adjust based on navbar height */
+    left: 0;
+    width: 100%;
+    background-color: white; /* Background color for dropdown */
+    padding: 10px 0;
+  }
+
+  .main-menu.open {
+    display: flex; /* Show menu when open */
+  }
+
+  .main-menu li {
+    margin: 10px 0; /* More spacing between items */
+  }
+
+  .navbar {
+    flex-direction: column; /* Stack navbar elements vertically */
+  }
+}
+
+/* Dropdown Styles */
+.services-dropdown
+ {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 800px; /* Adjust width as needed */
+  background-color: white;
+  display: flex;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.company-dropdown {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 200px;
+  height: 150px;
+  background-color: white;
+  display: flex;
+  z-index: 1000;
+  padding: 20px;
 }

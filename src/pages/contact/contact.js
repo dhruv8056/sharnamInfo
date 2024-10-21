@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import Navbar from '../../layout/navbar';
 import Footer from '../../layout/footer';
-
-
+import { FaAngleUp } from "react-icons/fa6";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -13,6 +12,7 @@ const Contact = () => {
     phoneNumber: '',
     message: ''
 
+   
   });
 
   const [errors, setErrors] = useState({});
@@ -61,6 +61,17 @@ const Contact = () => {
       setErrors(validationErrors);
     }
   };
+  const [showScrollUp, setShowScrollUp] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 200) {
+        setShowScrollUp(true);
+      } else {
+        setShowScrollUp(false);
+      }
+    });
+  }, []);
 
   return (
     <div>
@@ -171,6 +182,18 @@ const Contact = () => {
       </div>
      
       <Footer />
+      <div className='scrollup'>
+        {showScrollUp && (
+          <div className='up-icon'>
+            <FaAngleUp 
+            onClick={() => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+            />
+          </div>
+        )}
+      </div>
+
     </div>
 
   );

@@ -1,22 +1,23 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { FaInstagram, FaLinkedinIn, FaPhone, FaEnvelope, FaMapMarkerAlt, FaArrowAltCircleRight } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const navigate = useNavigate();
+
   const handleContactClick = () => {
     navigate('/contact');
   };
+
   return (
     <footer className="footer">
       <div className="footer-top">
         <div className="footer-left">
           <p className="footer-tagline">COMMITTED TO THE FUTURE</p>
           <p>We provide the expertise and support to propel your business forward.</p>
-          <button className="enquiry-button" onClick={handleContactClick} >Send Enquiry</button>
+          <button className="enquiry-button" onClick={handleContactClick}>Send Enquiry</button>
           <div className="social-icons">
-            {/* Add links to social media profiles */}
+            {/* Links to social media profiles */}
             <a href="https://www.instagram.com/sharnam_info" target="_blank" rel="noopener noreferrer">
               <FaInstagram className="social-icon" />
             </a>
@@ -29,21 +30,44 @@ const Footer = () => {
         <div className="footer-middle">
           <h3>Company</h3>
           <ul>
-            <li><FaArrowAltCircleRight color='white'/><Link to='/aboutus'>About Us</Link></li>
-            <li><FaArrowAltCircleRight color='white'/>Our Team</li>
-            <li><FaArrowAltCircleRight color='white'/>Careers</li>
-            <li><FaArrowAltCircleRight color='white'/><Link to='/contact'>Contact</Link></li>
+            <li>
+              <FaArrowAltCircleRight color='white' />
+              <Link to='/aboutus'>About Us</Link>
+            </li>
+            <li>
+              <FaArrowAltCircleRight color='white' />
+              <Link to='/team'>Our Team</Link>
+            </li>
+            <li>
+              <FaArrowAltCircleRight color='white' />
+              <Link to='/careers'>Careers</Link>
+            </li>
+            <li>
+              <FaArrowAltCircleRight color='white' />
+              <Link to='/contact'>Contact</Link>
+            </li>
           </ul>
         </div>
 
         <div className="footer-right">
           <h3>Services</h3>
           <ul>
-            <li><FaArrowAltCircleRight color='white'/><Link to='/web'> Web Development</Link></li>
-            <li><FaArrowAltCircleRight color='white'/><Link to='/ecommerce'> E-commerce Development</Link></li>
-            <li><FaArrowAltCircleRight color='white'/><Link to='/reactjs'> ReactJS Development</Link></li>
-            <li><FaArrowAltCircleRight color='white'/><Link to='/next'> NextJS Development</Link></li>
-           
+            <li>
+              <FaArrowAltCircleRight color='white' />
+              <Link to='/web'>Web Development</Link>
+            </li>
+            <li>
+              <FaArrowAltCircleRight color='white' />
+              <Link to='/ecommerce'>E-commerce Development</Link>
+            </li>
+            <li>
+              <FaArrowAltCircleRight color='white' />
+              <Link to='/reactjs'>ReactJS Development</Link>
+            </li>
+            <li>
+              <FaArrowAltCircleRight color='white' />
+              <Link to='/next'>NextJS Development</Link>
+            </li>
           </ul>
         </div>
       </div>
@@ -72,5 +96,3 @@ const Footer = () => {
 };
 
 export default Footer;
-/*
- */

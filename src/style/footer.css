@@ -25,17 +25,9 @@
     font-size: 1.5em;
     font-weight: bold;
 }
-
-.enquiry-button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #141516;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.footer-tagline p{
+    margin-bottom: 10px;
 }
-
 .social-icons {
     display: flex;
     justify-content: center;
@@ -45,8 +37,14 @@
 
 .social-icon {
     margin: 0 10px;
-    font-size: 20px;
-    color: #e0e7ee;
+    width: 40px;
+    height: 40px;
+    border-radius: 40%;
+    padding: 10px;
+    text-align: center;
+    font-size: 10px;
+    background-color: white;
+    color: #0056b3;
 }
 
 .footer-left,

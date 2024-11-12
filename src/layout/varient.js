@@ -20,6 +20,7 @@ export const FadeIn = (direction, delay, scale = 1, rotate = 0) => {
                 ease: [0.25, 0.1, 0.25, 1],
             },
         },
-        
+
     };
 };
+    

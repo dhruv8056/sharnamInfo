@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../../../layout/navbar';
 import Footer from '../../../layout/footer';
 import node1 from '../../../assets/img/node1.png';
 import { GrOptimize } from "react-icons/gr";
@@ -24,20 +23,7 @@ const Nodejs = () => {
   ];
   return (
     <div>
-      <div className='se-web'>
-        <Navbar />
-      </div>
-      <div className="se-section">
-        <div className="se-overlay">
-          <div className="se-content">
-            <button className="se-button">Node  Development</button>
-            <h1>Node Development</h1>
-            <p>Services - Node development</p>
-          </div>
-        </div>
-      </div>
-
-
+    
       <div className='node-content'>
         <div className='node-se'>
           <h3>Services</h3>
@@ -86,7 +72,6 @@ const Nodejs = () => {
         </motion.div>
       </div>
 
-
       <div className='reasons-container'>
         <h2>Some More Reasons to Build </h2>
         <h1>Your Applications In Node.js</h1>
@@ -112,7 +97,6 @@ const Nodejs = () => {
           </motion.div>
         </div>
       </div>
-
 
       {/*image sets*/}
       <div className="img-background-container">

@@ -39,12 +39,12 @@ function Myrouts() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home />} />
-          <Route path='/aboutus' element={<Aboutus/>} />
+          <Route path='/aboutus' element={<Aboutus />} />
           <Route path='/mission' element={<Mission />} />
           <Route path='/career' element={<Career />} />
           <Route path='/faq' element={<Faq />} />
           <Route path='/contact' element={<Contact />} />
-          <Route path="/web" element={<Web/>} />
+          <Route path="/web" element={<Web />} />
           <Route path="/ecommerce" element={<Ecommerce />} />
           <Route path="/angular" element={<Angular />} />
           <Route path="/typescript" element={<Typescript />} />

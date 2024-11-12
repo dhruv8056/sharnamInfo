@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../../../layout/navbar';
 import Footer from '../../../layout/footer';
 import next1 from '../../../assets/img/next1.png';
 import next2 from '../../../assets/img/next2.png';
@@ -48,20 +47,7 @@ const Next = () => {
   return (
 
     <div>
-      <div className='se-web'>
-        <Navbar />
-      </div>
-      <div className="se-section">
-        <div className="se-overlay">
-          <div className="se-content">
-            <button className="se-button">Next JS Development</button>
-            <h1>Next JS Development</h1>
-            <p>Services - NextJS development</p>
-          </div>
-        </div>
-      </div>
-
-
+    
       {/*next js description*/}
       <motion.div
         variants={FadeIn("down", 0.4)}
@@ -76,7 +62,6 @@ const Next = () => {
           TailwindCSS.'
         </p>
       </motion.div>
-
 
       {/* Next.js */}
       <div className='next-image'>
@@ -104,7 +89,6 @@ const Next = () => {
       <div className="n-next">
         <img src={next2} alt='n2-img' />
       </div>
-
 
       {/*next services*/}
       <div className="nextjs-services">

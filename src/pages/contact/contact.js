@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import Navbar from '../../layout/navbar';
@@ -12,7 +12,7 @@ const Contact = () => {
     phoneNumber: '',
     message: ''
 
-   
+
   });
 
   const [errors, setErrors] = useState({});
@@ -185,8 +185,8 @@ const Contact = () => {
       <div className='scrollup'>
         {showScrollUp && (
           <div className='up-icon'>
-            <FaAngleUp 
-            onClick={() => {
+            <FaAngleUp
+              onClick={() => {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
             />

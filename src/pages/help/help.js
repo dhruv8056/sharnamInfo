@@ -8,15 +8,15 @@ const Help = () => {
   };
   return (
     <div>
-       {/*help section*/}
-       <div className="h-help-section">
-                <div className="h-help-mark"><TbMessage2Question /></div>
-                <div className="h-help">
-                    <h2> Do you need further help or information?</h2>
-                    <p>Reach out to us if you need any assistance or have inquiries.</p>
-                </div>
-                <button className="let-s-discuss-button" onClick={handlehelpClick}>Let's Discuss</button>
-            </div>
+      {/*help section*/}
+      <div className="h-help-section">
+        <div className="h-help-mark"><TbMessage2Question /></div>
+        <div className="h-help">
+          <h2> Do you need further help or information?</h2>
+          <p>Reach out to us if you need any assistance or have inquiries.</p>
+        </div>
+        <button className="let-s-discuss-button" onClick={handlehelpClick}>Let's Discuss</button>
+      </div>
     </div>
   )
 }

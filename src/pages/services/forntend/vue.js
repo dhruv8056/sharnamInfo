@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../../../layout/navbar';
 import Footer from '../../../layout/footer';
 import Help from '../../help/help';
 import { FaClipboardCheck, FaMobileAlt, FaVuejs } from 'react-icons/fa';
@@ -35,20 +34,7 @@ const Vue = () => {
 
   return (
     <div>
-      <div className='se'>
-        <Navbar />
-      </div>
-      <div className="se-section">
-        <div className="se-overlay">
-          <div className="se-content">
-            <button className="se-button">VueJs Development</button>
-            <h1>VueJs Development</h1>
-            <p>Services - VueJs development</p>
-          </div>
-        </div>
-      </div>
-
-
+      
       {/*vuejs services*/}
       <div className="vue-container">
         <h1> VueJS Development services</h1>

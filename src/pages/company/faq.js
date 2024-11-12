@@ -31,31 +31,22 @@ const Faq = () => {
       <div className="se-web">
         <Navbar />
       </div>
-      <div className="se-section">
-     
-        <div className="se-overlay">
-        <div className="se-content">
-            <button className="se-button">Faq</button>
-            <h1>FAQ</h1>
-            <a href="/home">Home</a> - <span>Faq</span>
-          </div>
-        </div>
-        </div>
+    
       <div className='fa-section'>
         <h3>FAQ</h3>
         <h2>Frequently Asked Questions?</h2>
       </div>
       <div className='faq-container'>
-      <div className="faq-steps">
-        {faqs.map((faq, index) => (
-          <div key={index} className="faq-step" onClick={() => toggleAnswer(index)}>
-            <h3><FaChevronRight size={15} />  {faq.question}</h3>
-            {activeIndex === index && <p>{faq.answer}</p>}
-          </div>
-        ))}
+        <div className="faq-steps">
+          {faqs.map((faq, index) => (
+            <div key={index} className="faq-step" onClick={() => toggleAnswer(index)}>
+              <h3><FaChevronRight size={15} />  {faq.question}</h3>
+              {activeIndex === index && <p>{faq.answer}</p>}
+            </div>
+          ))}
+        </div>
       </div>
-      </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

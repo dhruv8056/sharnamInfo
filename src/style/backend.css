@@ -3,12 +3,13 @@
     padding: 2rem;
     background-color: #f9f9f9;
     border-radius: 8px;
+    padding-top: 10%;
     margin-bottom: 4%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .node-se {
-    text-align: left;
+    text-align: center;
     margin: auto 5%;
     margin-bottom: 2rem;
 }
@@ -19,12 +20,13 @@
 }
 
 .node-se h3 {
-    font-size: 13px;
+    font-size: 15px;
     color: #3f3ceb;
 }
 
 .node-se p {
-    font-size: 13px;
+    font-size: 14px;
+    margin-top: 5px;
     color: #1d1f22;
     line-height: 1.5;
 }
@@ -61,12 +63,10 @@
 }
 
 .node-item p {
-    font-size: 13px;
+    font-size: 14px;
     color: #555;
     line-height: 1.4;
 }
-
-
 
 .ne-icon {
     font-size: 1.5rem;
@@ -76,11 +76,8 @@
     color: rgb(49, 40, 175);
     width: 50px;
     height: 40px;
-
-
 }
 
-/*images with contants*/
 .reasons-container {
     margin: 5% auto;
     padding: 6% 6%;
@@ -156,13 +153,105 @@
     border-radius: 10%;
 }
 
+@media only screen and (max-width: 768px) {
+    .node-content {
+        padding: 1rem;
+    }
 
-/*nest js developments*/
+    .node-se h1 {
+        font-size: 2rem;
+    }
+
+    .node-se h3 {
+        font-size: 12px;
+    }
+
+    .node-se p {
+        font-size: 12px;
+    }
+
+    .node-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .node-item {
+        width: calc(100% - 2rem);
+    }
+
+    .reasons-container {
+        padding: 4%;
+    }
+
+    .reasons-container h2,
+    .reasons-container h1 {
+        font-size: 1.3rem;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reasons-list {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .reason-card {
+        max-width: 90%;
+    }
+
+    .node-img {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .node-se h1 {
+        font-size: 1.5rem;
+    }
+
+    .node-se h3 {
+        font-size: 11px;
+    }
+
+    .node-se p {
+        font-size: 11px;
+    }
+
+    .node-item {
+        padding: 1rem;
+    }
+
+    .node-item h2 {
+        font-size: 14px;
+    }
+
+    .node-item p {
+        font-size: 12px;
+    }
+
+    .reason-card {
+        padding: 10px;
+    }
+
+    .reasons-list h3 {
+        font-size: 12px;
+    }
+
+    .node-img img {
+        margin-top: 3%;
+    }
+}
+
+
+/*nest js developments aply css style*/
 .nest-contents {
     display: flex;
     padding: 5% 10%;
     align-items: flex-start;
-    margin: 5% auto;
+
 }
 
 .nest-image {
@@ -192,34 +281,43 @@
 
 .feature h3 {
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 18px;
     color: #242629;
     margin-bottom: 10px;
 }
 
 .feature p {
-    font-size: 13px;
-    color: #212325;
+    font-size: 14px;
+    color: #333;
+}
+
+.feature-icon {
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    width: 50px;
+    text-align: center;
+    height: 50px;
+    padding: 10px;
+    color: rgb(49, 40, 175);
+    font-size: 1.5rem;
 }
 
 .nestjs-features h2 {
     font-size: 20px;
-    margin-bottom: 5%;
     color: #1d1f22;
     font-family: 'Lucida Sans';
 }
 
 .nestjs-features h1 {
     font-size: 16px;
-    color: #0e0e0f;
+    color: #24282c;
     margin-bottom: 5%;
 }
 
-/*services*/
 .nest-info {
     border-radius: 8px;
     padding: 20px;
-    margin: 20px 0;
+    padding-top: 10%;
     text-align: center;
 }
 
@@ -233,10 +331,10 @@
 }
 
 .nest-info h2 {
-    line-height: 1.5;
-    color: #1f252b;
+
     text-align: center;
-    font-size: 13px;
+    font-size: 14px;
+    color: #0262c9;
     margin-bottom: 15px;
 }
 
@@ -244,16 +342,78 @@
     color: #007bff;
 }
 
+@media only screen and (max-width: 768px) {
+    .nest-contents {
+        flex-direction: column;
+        padding: 2rem 5%;
+    }
+
+    .nest-image {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .nestjs-features h2 {
+        font-size: 1.5rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature {
+        padding: 15px;
+    }
+
+    .nest-info {
+        padding: 15px;
+    }
+
+    .nest-info h1 {
+        font-size: 1.5rem;
+    }
+
+    .nest-info h2 {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .nest-contents {
+        padding: 1rem;
+    }
+
+    .nestjs-features h2 {
+        font-size: 1.3rem;
+    }
+
+    .feature h3 {
+        font-size: 14px;
+    }
+
+    .feature p {
+        font-size: 12px;
+    }
+
+    .nest-info h1 {
+        font-size: 1.2rem;
+    }
+
+    .nest-info h2 {
+        font-size: 11px;
+    }
+}
+
 
 /*php development css*/
-
 .php-team-container {
-    padding: 5% 5%;
+    padding: 10%;
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin: 5% auto;
+
 }
 
 .php-team-container h2 {
@@ -307,51 +467,48 @@
 
 .php-team-content p {
     color: #555;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.6;
 }
 
 /*services php*/
 .php-services-container {
     display: flex;
-    background-color: #f9f9f9;
     justify-content: center;
     width: 100%;
-    margin-bottom: 5%;
     align-items: center;
     flex-direction: column;
-    padding: 20px;
-}
-
-.php-right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+    padding: 40px 20px;
 }
 
 .php-img img {
     width: 250px;
-    margin-top: 5rem;
-    align-items: center;
-    text-align: center;
+    margin-top: 2rem;
+    align-self: center;
     border-radius: 8px;
 }
 
 .php-services {
-    max-width: 700px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 30px;
 }
 
 .php-services h2 {
-    margin-bottom: 5%;
+    margin-bottom: 20px;
     font-size: 2rem;
-    font-family: 'Lucida Sans';
+    color: #333;
+    font-family: 'Lucida Sans', sans-serif;
 }
 
 .php-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
+    width: 100%;
 }
 
 .php-card {
@@ -360,12 +517,15 @@
     width: 300px;
     padding: 20px;
     text-align: center;
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .php-card:hover {
     background-color: rgb(241, 242, 247);
     border-color: #8fa9c5;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .php-icon {
@@ -382,19 +542,89 @@
 }
 
 .php-card h3 {
-    font-size: 16px;
+    font-size: 1rem;
+    color: #333;
     margin-bottom: 10px;
 }
 
-
 .php-card p {
-    font-size: 13px;
+    font-size: 0.9rem;
     color: #555;
 }
 
+@media only screen and (max-width: 768px) {
+    .php-team-container {
+        padding: 2rem;
+    }
+
+    .php-team-content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .php-team-content {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .php-services-container {
+        padding: 20px;
+    }
+
+    .php-img img {
+        width: 100%;
+        max-width: 250px;
+        margin-top: 1rem;
+    }
+
+    .php-services h2 {
+        font-size: 1.5rem;
+    }
+
+    .php-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .php-card {
+        width: 90%;
+    }
+
+    .php-card h3 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .php-team-container h2 {
+        font-size: 1.2rem;
+    }
+
+    .php-team-container h4 {
+        font-size: 12px;
+    }
+
+    .php-team-content p {
+        font-size: 12px;
+    }
+
+    .php-services h2 {
+        font-size: 1.3rem;
+    }
+
+    .php-card h3 {
+        font-size: 12px;
+    }
+
+    .php-card p {
+        font-size: 11px;
+    }
+}
+
+
 /* Laravel development css*/
 .laravel-development {
-    padding: 20px;
+    padding: 5%;
     border-radius: 8px;
     margin-bottom: 4%;
 
@@ -408,7 +638,7 @@
 }
 
 .l-con h1 {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     color: #333;
     text-align: center;
     margin-top: 3%;
@@ -417,13 +647,13 @@
 
 .l-con h2 {
     font-size: 1rem;
-    color: #333;
+    color: #0932eb;
     text-align: center;
     margin-bottom: 20px;
 }
 
 .l-con p {
-    font-size: 13px;
+    font-size: 14px;
     color: #333;
     text-align: center;
     margin-bottom: 20px;
@@ -461,7 +691,7 @@
 }
 
 .skill-card p {
-    font-size: 13px;
+    font-size: 14px;
     color: #666;
 }
 
@@ -487,6 +717,11 @@
 
 }
 
+.laravel-header h2 {
+    color: #333;
+    font-size: 20px;
+}
+
 .laravel-header {
     display: flex;
     align-items: center;
@@ -509,16 +744,11 @@
 .laravel-card {
     background-color: #fff;
     border: 1px solid #e0e0e0;
-    border-radius: 10%;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
     padding: 20px;
     width: 250px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-}
 
-.laravel-card:hover {
-    background-color: #77b1ee;
-    border-color: #4082d8;
 }
 
 .laravel-card-content {
@@ -527,7 +757,7 @@
 }
 
 .laravel-title {
-    font-size: 18px;
+    font-size: 16px;
     color: #424547;
     margin-bottom: 10px;
 }
@@ -537,29 +767,114 @@
     color: #555;
 }
 
-/*python*/
+@media only screen and (max-width: 768px) {
+    .laravel-development {
+        padding: 15px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .l-con h1 {
+        font-size: 1rem;
+    }
+
+    .l-con h2 {
+        font-size: 0.9rem;
+    }
+
+    .l-con p {
+        font-size: 12px;
+    }
+
+    .skill-card {
+        width: 90%;
+        max-width: 250px;
+    }
+
+    .l-img img {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .laravel-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .laravel-card {
+        width: 90%;
+        max-width: 250px;
+    }
+
+    .laravel-title {
+        font-size: 14px;
+    }
+
+    .laravel-description {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .l-con h1 {
+        font-size: 0.9rem;
+    }
+
+    .l-con h2 {
+        font-size: 0.8rem;
+    }
+
+    .l-con p {
+        font-size: 11px;
+    }
+
+    .skill-card h3 {
+        font-size: 0.9rem;
+    }
+
+    .skill-card p {
+        font-size: 11px;
+    }
+
+    .laravel-header h2 {
+        font-size: 1.2rem;
+    }
+
+    .laravel-title {
+        font-size: 12px;
+    }
+
+    .laravel-description {
+        font-size: 11px;
+    }
+}
+
+
+
+/*python css style */
 .py-info {
-    padding: 2rem;
     justify-content: center;
     text-align: center;
     align-items: center;
     flex-direction: column;
     border-radius: 8px;
     display: flex;
-    margin: 2rem auto;
+
 }
 
 .py-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #333;
     margin-bottom: 1rem;
     font-weight: 700;
 }
 
 .py-description {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 2rem;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5rem;
     line-height: 1.6;
 }
 
@@ -568,104 +883,140 @@
     justify-content: center;
 }
 
-.py-image {
-    width: 30%;
+.p-image {
+    width: 50%;
+    padding-top: 5%;
     height: auto;
     border-radius: 8px;
-
 }
 
-/*services*/
+/* services */
 .python-main {
-    padding: 3rem;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px auto;
-    margin-bottom: 3%;
-    text-align: center;
-}
-
-.python-services {
-    flex: 2;
-
-}
-
-.python-services h2 {
-    font-size: 1.5rem;
-    color: #333;
-    text-align: left;
-    margin-bottom: 1rem;
-}
-
-.python-services h5 {
-    font-size: 13px;
-    color: rgb(49, 40, 175);
-    text-align: left;
-    margin-bottom: 2rem;
-}
-
-.py-cards {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-
-}
-
-.py-card {
-    flex: 1 1 calc(40% - 20px);
-    background-color: #fff;
-    padding: 1.5rem;
-    gap: 15px;
-    border-radius: 8px;
-    border: 1px solid #b7b4c7;
-    text-align: left;
-    max-width: 250px;
-}
-
-.py-card:hover {
-    background-color: #77b1ee;
-    border-color: #4082d8;
-}
-
-.py-icon {
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  .python-services h2 {
     font-size: 2rem;
-    color: rgb(49, 40, 175);
-    margin-bottom: 1rem;
-}
-
-.py-card h3 {
-    font-size: 16px;
+    color: #0262c9;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .py-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .py-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #007bff;
+    padding: 20px;
+    text-align: center;
+    width: calc(33.33% - 20px);
+    min-width: 280px;
+  }
+  
+  .py-card h3 {
+    font-size: 1.2rem;
     color: #333;
-    margin-bottom: 0.5rem;
-}
-
-.py-card p {
-    font-size: 13px;
+    margin: 10px 0;
+  }
+  
+  .py-card p {
+    font-size: 0.95rem;
     color: #555;
     line-height: 1.5;
+  }
+  
+  .py-icon {
+    font-size: 2rem;
+    color: #007acc;
+    margin-bottom: 10px;
+  }
+  
+@media only screen and (max-width: 768px) {
+    .python-main {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .python-services {
+        padding: 1rem;
+    }
+
+    .python-services h2 {
+        font-size: 1.3rem;
+    }
+
+    .python-services h5 {
+        font-size: 12px;
+    }
+
+    .py-cards {
+        justify-content: center;
+    }
+
+    .py-card {
+        flex: 1 1 calc(50% - 20px);
+        max-width: 90%;
+    }
+
+    .py-smage {
+        margin-top: 1rem;
+    }
+
+    .py-s-image {
+        max-width: 100%;
+    }
 }
 
-.py-smage {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+@media only screen and (max-width: 480px) {
+    .py-card {
+        flex: 1 1 100%;
+    }
+
+    .python-services {
+        padding: 0.5rem;
+    }
+
+    .python-services h2 {
+        font-size: 1.1rem;
+    }
+
+    .python-services h5 {
+        font-size: 11px;
+    }
+
+    .py-icon {
+        font-size: 1.5rem;
+    }
+
+    .py-card h3 {
+        font-size: 14px;
+    }
+
+    .py-card p {
+        font-size: 12px;
+    }
+
+    .py-smage {
+        margin-top: 1rem;
+    }
 }
 
-.py-s-image {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    border-radius: 8px;
-}
-
-/*web hosting*/
+/*web hosting css aply*/
 .h-services {
     text-align: center;
-    padding: 50px 20px;
+    padding-top: 10%;
+    background-color: #f9faff;
     margin-bottom: 5%;
 
 }
@@ -720,108 +1071,58 @@
     line-height: 1.5;
 }
 
-.host-pic {
-    margin: auto;
-    width: 100%;
-    height: 70vh;
-    background-image: url('../assets/img/web_h2.png');
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 5%;
 
-}
-
-.host-weboverlay {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(57, 44, 240, 0.5);
-    display: flex;
-    justify-content: center;
-    border-radius: 0%;
-    align-items: center;
-    color: white;
-    text-align: center;
-}
-
-.host-icon h1 {
-    font-size: 3rem;
-
-}
-
-
-@media screen and (max-width: 768px) {
-    .h-services {
-        padding: 20px 10px;
-    }
-
+/*Responsive css style*/
+@media only screen and (max-width: 768px) {
     .hosting-services {
-        max-width: 100%;
+        flex: 1 1 calc(50% - 20px);
+        max-width: 90%;
     }
 
     .h-services h1 {
-        font-size: 2rem;
-    }
-
-    .h-services h2 {
         font-size: 1.5rem;
     }
 
-    .host-i {
-        font-size: 2.5rem;
+    .h-services h2 {
+        font-size: 0.9rem;
+    }
+
+    .host-pic {
+        height: 50vh;
     }
 
     .hosting-services h3 {
-        font-size: 1.25rem;
+        font-size: 14px;
     }
 
     .hosting-services p {
-        font-size: 0.9rem;
-    }
-}
-
-
-/*Responsive Media Queries*/
-@media (max-width: 768px) {
-    .node-item {
-        width: calc(100% - 2rem);
-    }
-
-    .reasons-list {
-        grid-template-columns: 1fr;
-    }
-
-    .features-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .php-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .php-team-content-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .node-se h1 {
-        font-size: 2rem;
-    }
-
-    .node-se p,
-    .node-item h2,
-    .node-item p {
         font-size: 12px;
     }
+}
 
-    .nest-image {
-        width: 100%;
+@media only screen and (max-width: 480px) {
+    .hosting-services {
+        flex: 1 1 100%;
+        max-width: 100%;
     }
 
-    .reason-card {
-        max-width: 100%;
+    .h-services {
+        padding: 30px 10px;
+    }
+
+    .h-services h1 {
+        font-size: 1.2rem;
+    }
+
+    .h-services h2 {
+        font-size: 0.8rem;
+    }
+
+    .host-pic {
+        height: 40vh;
+    }
+
+    .host-icon h1 {
+        font-size: 2rem;
     }
 }

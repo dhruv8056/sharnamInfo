@@ -1,13 +1,7 @@
 import React from 'react';
-import { useNavigate, Link } from 'react-router-dom';
 import { FaInstagram, FaLinkedinIn, FaPhone, FaEnvelope, FaMapMarkerAlt, FaArrowAltCircleRight } from 'react-icons/fa';
 
 const Footer = () => {
-  const navigate = useNavigate();
-
-  const handleContactClick = () => {
-    navigate('/contact');
-  };
 
   return (
     <footer className="footer">
@@ -15,7 +9,6 @@ const Footer = () => {
         <div className="footer-left">
           <p className="footer-tagline">COMMITTED TO THE FUTURE</p>
           <p>We provide the expertise and support to propel your business forward.</p>
-          <button className="enquiry-button" onClick={handleContactClick}>Send Enquiry</button>
           <div className="social-icons">
             {/* Links to social media profiles */}
             <a href="https://www.instagram.com/sharnam_info" target="_blank" rel="noopener noreferrer">
@@ -25,26 +18,22 @@ const Footer = () => {
               <FaLinkedinIn className="social-icon" />
             </a>
           </div>
-        </div>                                        
-                                                     
+        </div>
+
         <div className="footer-middle">
           <h3>Company</h3>
           <ul>
             <li>
               <FaArrowAltCircleRight color='white' />
-              <Link to='/aboutus'>About Us</Link>
+              <a href='/aboutus'> About Us</a>
             </li>
             <li>
               <FaArrowAltCircleRight color='white' />
-              <Link to='/team'>Our Team</Link>
+              <a href='/career  '> Careers</a>
             </li>
             <li>
               <FaArrowAltCircleRight color='white' />
-              <Link to='/careers'>Careers</Link>
-            </li>
-            <li>
-              <FaArrowAltCircleRight color='white' />
-              <Link to='/contact'>Contact</Link>
+              <a href='/contact'> Contact Us</a>
             </li>
           </ul>
         </div>
@@ -54,19 +43,27 @@ const Footer = () => {
           <ul>
             <li>
               <FaArrowAltCircleRight color='white' />
-              <Link to='/web'>Web Development</Link>
+              <a href='/web'> Web Development</a>
             </li>
             <li>
               <FaArrowAltCircleRight color='white' />
-              <Link to='/ecommerce'>E-commerce Development</Link>
+              <a href='/ecommerce'> E-commerce Development</a>
             </li>
             <li>
               <FaArrowAltCircleRight color='white' />
-              <Link to='/reactjs'>ReactJS Development</Link>
+              <a href='/reactjs'> ReactJs Development</a>
             </li>
             <li>
               <FaArrowAltCircleRight color='white' />
-              <Link to='/next'>NextJS Development</Link>
+              <a href='/nodejs'> NodeJs Development</a>
+            </li>
+            <li>
+              <FaArrowAltCircleRight color='white' />
+              <a href='/tython'> Python Development</a>
+            </li>
+            <li>
+              <FaArrowAltCircleRight color='white' />
+              <a href='/php'> Php Development</a>
             </li>
           </ul>
         </div>

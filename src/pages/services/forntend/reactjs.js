@@ -1,12 +1,12 @@
 import React from 'react';
 import { FaLaptopCode, FaCubes, FaProjectDiagram, FaTachometerAlt, FaMobileAlt, FaDatabase, FaReact } from 'react-icons/fa';
-import Navbar from '../../../layout/navbar';
 import { FaRegCheckCircle, FaSearch, FaLightbulb, FaDesktop, FaRocket } from 'react-icons/fa';
 import Footer from '../../../layout/footer';
-import react1 from '../../../assets/img/react1.png'
+import react1 from '../../../assets/img/react1.png';
 import Help from '../../help/help';
 import { motion } from 'framer-motion';
 import { FadeIn } from '../../../layout/varient';
+import web1 from '../../../assets/img/web1.png';
 const Reactjs = () => {
   const services = [
     {
@@ -44,23 +44,27 @@ const Reactjs = () => {
   return (
 
     <div>
-      <div className='se'>
-        <Navbar />
-      </div>
-      <div className="se-section">
-        <div className="se-overlay">
-          <div className="se-content">
-            <button className="se-button">React Development</button>
-            <h1>React Js Development</h1>
-            <p>Services- React Js development</p>
-          </div>
+        <div className="w-section">
+        <div className="w-content">
+          <h1>REACT JS</h1>
+          <h1>DEVELOPMENT COMPANY</h1>
+          <p>
+            Transform your online business with our comprehensive e-commerce development services. Our team of experienced developers
+            utilizes industry-leading frameworks and the latest technologies to create user-friendly, scalable, and high-performing
+            e-commerce solutions tailored to meet your business needs.
+          </p>
+          <p>
+           Our client-centric approach prioritizes innovation, ensuring that every project
+            reflects your brand's goals and contributes to long-term success.
+          </p>
+          <a class="cbtn animation" href="/contact">Hire React Js Devlopment</a>
+        </div>
+        <div className="wimage-content">
+          <img src={web1} alt="Office Illustration" />
         </div>
       </div>
-
-
       {/*react services*/}
       <div className="react-container">
-
         <h2>ReactJs services</h2>
         <div className='r-p'>
           <p>Our ReactJS development services cover a comprehensive range of <br />solutions tailored to meet
@@ -102,7 +106,7 @@ const Reactjs = () => {
           <h3>Key Features:</h3>
           <ul>
             <li>Component-Based Architecture</li>
-            <li>Virtual DOM for optimal performance</li>    
+            <li>Virtual DOM for optimal performance</li>
             <li>Declarative UI for predictable coding</li>
             <li>Unidirectional data flow for easier data management</li>
             <li>Hooks for using state and lifecycle features in functional components</li>
@@ -127,7 +131,6 @@ const Reactjs = () => {
             Debugging is getting easy with specialized Chrome extension
           </li>
         </ul>
-
         <h2 className="r-title">
           <span className="js-text">Js</span>
           <span className="rr-icon">

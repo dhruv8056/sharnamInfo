@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../../../layout/navbar';
 import Footer from '../../../layout/footer';
 import Help from '../../help/help';
 import { SiTypescript } from "react-icons/si";
@@ -8,8 +7,6 @@ import { MdOutlineSupportAgent } from "react-icons/md";
 import { FiDatabase, FiRefreshCcw, FiLayers, FiBox } from 'react-icons/fi';
 import { FaComputer } from 'react-icons/fa6';
 import { BsDatabaseFillGear } from 'react-icons/bs';
-import { motion } from 'framer-motion';
-import { FadeIn } from '../../../layout/varient';
 const Typescript = () => {
     const servicesData = [
         {
@@ -27,7 +24,6 @@ const Typescript = () => {
             description: 'Ongoing maintenance and support for TypeScript-based applications.',
             icon: <RiUserSettingsFill size={40} color="#007acc" />,
         },
-
     ];
 
     const services = [
@@ -62,23 +58,9 @@ const Typescript = () => {
             icon: <FiBox />
         }
     ];
-
     return (
         <div>
-            <div className='se'>
-                <Navbar />
-            </div>
-
-            <div className="se-section">
-                <div className="se-overlay">
-                    <div className="se-content">
-                        <button className="se-button">TypeScript Development</button>
-                        <h1>TypeScript Development</h1>
-                        <p>Services - TypeScript development</p>
-                    </div>
-                </div>
-            </div>
-
+           
             {/* TypeScript services */}
             <div className="ty-container">
                 <h1>TypeScript Development</h1>
@@ -110,12 +92,7 @@ const Typescript = () => {
             {/*services typescript*/}
             <div className='ty-main'>
                 <h1>TypeScript services</h1>
-                <motion.div
-                    variants={FadeIn("down", 0.4)}
-                    initial="hidden"
-                    whileInView={"show"}
-                    viewport={{ once: false, amount: 0.5 }}
-                    className="services-ty">
+                <div className="services-ty">
                     {services.map((service, index) => (
                         <div key={index} className="service-card-ty">
                             <div className="icon-ty">{service.icon}</div>
@@ -123,7 +100,7 @@ const Typescript = () => {
                             <p>{service.description}</p>
                         </div>
                     ))}
-                </motion.div>
+                </div>
             </div>
 
             {/*image sets*/}

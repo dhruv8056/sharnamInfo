@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../../../layout/navbar';
 import Footer from '../../../layout/footer';
 import nuxt1 from '../../../assets/img/nuxt1.png';
 import nuxt2 from '../../../assets/img/nuxt2.png';
@@ -13,19 +12,6 @@ const Nuxt = () => {
   return (
 
     <div>
-      <div className='se-web'>
-        <Navbar />
-      </div>
-      <div className="se-section">
-        <div className="se-overlay">
-          <div className="se-content">
-            <button className="se-button">Nuxt Js Development</button>
-            <h1>Nuxt Js Development</h1>
-            <p>Services - Nuxt development</p>
-          </div>
-        </div>
-      </div>
-
       {/*nuxt js devlopments*/}
       <div className="nuxt-section">
         <div className="nuxt-content">
@@ -72,36 +58,39 @@ const Nuxt = () => {
         </motion.div>
       </div>
 
-      {/*description*/}
+
+      {/* description */}
       <div className='nuxt-describs'>
-        <motion.div
-          variants={FadeIn("down", 0.4)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.5 }} className='nt-img'>
-          <img src={nuxt2} alt='n-i'></img>
-        </motion.div>
         <motion.div
           variants={FadeIn("right", 0.4)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.5 }} className='n-des'>
+          viewport={{ once: false, amount: 0.5 }}
+          className='n-des'
+        >
           <h1>Nuxt.js: The Perfect Blend of Performance and Functionality for Web Application Development.</h1>
           <p>Nuxt.js is a robust, open-source framework for building web applications using Vue.js. It provides a
             unique blend of performance and functionality, making it the
             perfect choice for developers developing dynamic and interactive web applications.</p>
-          <p> You can easily create powerful and robust web applications that meet your business's
+          <p>You can easily create powerful and robust web applications that meet your business's
             and your users' needs. The built-in server-side rendering capabilities improve the performance and
             speed of your application, especially in terms of SEO and page load time.</p>
-
+        </motion.div>
+        <motion.div
+          variants={FadeIn("down", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.5 }}
+          className='nt-img'
+        >
+          <img src={nuxt2} alt='n-i'></img>
         </motion.div>
       </div>
-
       {/*image sets*/}
       <div className="img-background-container">
         <div className="img-overlay">
           <div className='img-con'>
-            <TbBrandNuxt  size={30}/>
+            <TbBrandNuxt size={30} />
             <h1>Nuxt Js- Development<br /></h1>
             <p> Our custom NuxtJS development <br />services are tailored to meet your specific requirements.</p>
           </div>

@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../../../layout/navbar';
 import php1 from '../../../assets/img/php1.png';
 import Footer from '../../../layout/footer';
 import Help from '../../help/help';
@@ -45,18 +44,7 @@ const Php = () => {
 
   return (
     <div>
-      <div className='se-web'>
-        <Navbar />
-      </div>
-      <div className="se-section">
-        <div className="se-overlay">
-          <div className="se-content">
-            <button className="se-button">Php  Development</button>
-            <h1>Php Development</h1>
-            <p>Services - Php development</p>
-          </div>
-        </div>
-      </div>
+    
 
       <div className="php-team-container">
         <h2> PHP Development Team with Us</h2>
@@ -127,7 +115,7 @@ const Php = () => {
                 viewport={{ once: false, amount: 0.5 }} key={index} className='php-card'>
                 <div className='php-icon'>{service.icon}</div>
                 <h3>{service.title}</h3>
-                <p>{service.description}</p>  
+                <p>{service.description}</p>
               </motion.div>
             ))}
           </div>

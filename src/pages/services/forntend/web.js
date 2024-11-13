@@ -1,15 +1,15 @@
 // Web.js
 import React from 'react';
-import Navbar from '../../../layout/navbar';
 import Footer from '../../../layout/footer';
+import web1 from '../../../assets/img/web1.png';
 import { VscCircleFilled } from "react-icons/vsc";
 import Help from '../../help/help';
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { AiOutlinePython } from "react-icons/ai";
 import { HiOutlineComputerDesktop } from "react-icons/hi2";
-import { motion } from 'framer-motion';
-import { FadeIn } from '../../../layout/varient';
+import { PiDesktopTower } from 'react-icons/pi';
 const Web = () => {
+
     const services = [
         {
             title: 'Web development',
@@ -35,31 +35,37 @@ const Web = () => {
 
     return (
         <div>
-            <div className='se-web'>
-                <Navbar />
-            </div>
-            <div className="se-section">
-                <div className="se-overlay">
-                    <div className="se-content">
-                        <button className="se-button">Web Development</button>
-                        <h1>Web Development</h1>
-                        <p>Services - Web development</p>
-
-                    </div>
+            <div className="w-section">
+                <div className="w-content">
+                    <h1>WEB</h1>
+                    <h1>DEVELOPMENT COMPANY</h1>
+                    <p >
+                        Elevate your digital presence with our expertise in web development. Our team of skilled professionals
+                        leverages powerful frameworks and best practices to deliver high-quality, scalable, and cost-effective
+                        web solutions. Whether you need a responsive website or a custom web application we’re here to help your business thrive.
+                    </p>
+                    <p >
+                        With our commitment to innovation and client satisfaction, we ensure that every project aligns with
+                        your unique goals.
+                    </p>
+                    <a class="cbtn animation" href="/contact">Hire Web Devlopment</a>
+                </div>
+                <div className="wimage-content">
+                    <img src={web1} alt="Office Illustration" />
                 </div>
             </div>
-
-
             {/* web devlopment*/}
             <div className="web-services">
                 <h4>O U R</h4>
                 <h2>Web Development </h2>
-                <hr className='web-line'></hr>
+                <hr className='we-line'></hr>
                 <div className="web-app">
                     <div className="cus-app">
                         <h3><VscCircleFilled className='web-icon' /> Custom Website Development:</h3>
                         <p>
-                            Our custom web development services ensure that the solutions we deliver align precisely with your unique business needs. Whether you choose React,paython our custom solutions seamlessly integrate with various platforms for optimal performance.
+                            Our custom web development services ensure that the solutions we deliver align precisely with
+                            your unique business needs. Whether you choose React,paython our custom solutions seamlessly
+                            integrate with various platforms for optimal performance.
                         </p>
                     </div>
                     <div className="cus-app">
@@ -97,12 +103,7 @@ const Web = () => {
                 <p>Utilize our dependable processes to accelerate delivery across various technology stacks. <br />
                     Let's discuss how we can assist you.</p>
 
-                <motion.div
-                    variants={FadeIn("down", 0.4)}
-                    initial="hidden"
-                    whileInView={"show"}
-                    viewport={{ once: false, amount: 0.5 }}
-                    className="web-services-grid">
+                <div className="web-services-grid">
                     {services.map((service, index) => (
                         <div className="web-service-card" key={index}>
                             <div className="web-dservice-icon">{service.icon}</div>
@@ -110,17 +111,16 @@ const Web = () => {
                             <p>{service.description}</p>
                         </div>
                     ))}
-                </motion.div>
+                </div>
             </div>
 
             {/*image sets*/}
             <div className="img-background-container">
                 <div className="img-overlay">
                     <div className='img-con'>
+                        <PiDesktopTower size={30} />
                         <h1>Web - Development<br /></h1>
-                        <p> web deblopment It involves a combination of various <br />tasks
-                            and technologies to build <br />the functionality, design, and
-                            interactivity of websites.</p>
+                        <p> Our custom Web development <br />services are tailored to meet your specific requirements.</p>
                     </div>
                 </div>
             </div>

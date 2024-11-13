@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../../../layout/navbar';
 import Footer from '../../../layout/footer';
 import Help from '../../help/help';
 import laravel1 from '../../../assets/img/laravel1.png';
@@ -75,20 +74,6 @@ const Laravel = () => {
 
   return (
     <div>
-      <div className='se-web'>
-        <Navbar />
-      </div>
-      <div className="se-section">
-        <div className="se-overlay">
-          <div className="se-content">
-            <button className="se-button">Laravel Development</button>
-            <h1>Laravel Development</h1>
-            <p>Services - Laravel development</p>
-          </div>
-        </div>
-      </div>
-
-
       {/*laravel development*/}
       <div className="laravel-development">
         <div className='l-con'>
@@ -126,7 +111,6 @@ const Laravel = () => {
 
       </motion.div>
       {/* Laravel services */}
-
       <div className="laravel-services">
         <div className="laravel-header">
           <img src={laravel2} alt='l-images' className="laravel-header-image" />

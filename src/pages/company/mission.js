@@ -13,16 +13,6 @@ const Mission = () => {
       <div className="se-web">
         <Navbar />
       </div>
-      <div className="se-section">
-        <div className="se-overlay">
-          <div className="se-content">
-            <button className="se-button">Our Mission</button>
-            <h1>Our Mission</h1>
-            <a href="/home">Home</a> - <span>Our Mission</span>
-          </div>
-        </div>
-      </div>
-
       <div className="missions-card">
         <div className="image-container">
           <img src={logo} alt="mission" className="mission-image" />
@@ -51,7 +41,7 @@ const Mission = () => {
           </ul>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

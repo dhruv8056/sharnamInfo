@@ -17,15 +17,7 @@ const Career = () => {
       <div className="se-web">
         <Navbar />
       </div>
-      <div className="se-section">
-        <div className="se-overlay">
-          <div className="se-content">
-            <button className="se-button">Career</button>
-            <h1>Career</h1>
-            <a href="/home">Home</a> - <span>Career</span>
-          </div>
-        </div>
-      </div>
+    
       <div className='careers'>
         <div className='career-contain'>
           <img src={career} alt="career" className="career-image" />
@@ -75,34 +67,34 @@ const Career = () => {
       <div className='hire-steps'>
         <div className='hire-step'>
           <div className='h-icon'>
-             <TiStopwatch />
+            <TiStopwatch />
           </div>
           <h3>Flexible Timings</h3>
           <p>To empower employees to manage things in a fast-paced life.</p>
         </div>
         <div className='hire-step'>
-        <div className='h-icon'>
-        <MdOutlineModelTraining />
-        </div>
-        <h3>Training</h3>
+          <div className='h-icon'>
+            <MdOutlineModelTraining />
+          </div>
+          <h3>Training</h3>
           <p>Practical training & learning from the experts and mentors.</p>
         </div>
         <div className='hire-step'>
-        <div className='h-icon'>
-        <FaAward />
-        </div>
-        <h3>Rewards</h3>
+          <div className='h-icon'>
+            <FaAward />
+          </div>
+          <h3>Rewards</h3>
           <p>To value and appreciate the performance on a regular basis.</p>
         </div>
         <div className='hire-step'>
-        <div className='h-icon'>
-        <RiTeamFill />
-        </div>
-        <h3>Team building</h3>
+          <div className='h-icon'>
+            <RiTeamFill />
+          </div>
+          <h3>Team building</h3>
           <p>Indoor & outdoor team building workshops and activities.</p>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   )
 }

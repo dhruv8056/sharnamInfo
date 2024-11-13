@@ -1,28 +1,16 @@
 import React from 'react'
-import Navbar from '../../../layout/navbar';
 import { SiNestjs } from "react-icons/si";
 import next1 from '../../../assets/img/nest1.png';
 import Footer from '../../../layout/footer';
 import Help from '../../help/help';
 import { motion } from 'framer-motion';
+import { FaPuzzlePiece,  FaSitemap, FaServer, FaChartLine, FaUsers } from 'react-icons/fa';
 import { FadeIn } from '../../../layout/varient';
+import { TbBrandTypescript } from 'react-icons/tb';
 const Nestjs = () => {
 
   return (
-    <div>
-      <div className='se-web'>
-        <Navbar />
-      </div>
-      <div className="se-section">
-        <div className="se-overlay">
-          <div className="se-content">
-            <button className="se-button">Nest Development</button>
-            <h1>Nest Development</h1>
-            <p>Services - Nest development</p>
-          </div>
-        </div>
-      </div>
-
+    <div >
       <motion.div
         variants={FadeIn("down", 0.4)}
         initial="hidden"
@@ -32,17 +20,20 @@ const Nestjs = () => {
           NestJS Development Services
         </h1>
         <h2>
-          NestJS is a powerful Node.js framework that helps teams to build efficient and scalable server-side applications. <br />
+          NestJS is a powerful Node.js framework that helps teams to build efficient and scalable
+          server-side applications. <br />
           It’s compatible with a wide range of libraries, allowing developers to take advantage of the many valuable third-party plugins.
         </h2>
         <h2>
-          Our development team has used NestJS in many web development projects and knows how to make the most of this incredibly versatile framework.<br />
+          Our development team has used NestJS in many web development projects and knows how to make the
+          most of this incredibly versatile framework.<br />
           Team up with us to unlock the value of your web app with the help of our expertise in NestJS.
         </h2>
       </motion.div>
+
+
       {/*images and contants*/}
       <div className='nest-contents'>
-
         <img src={next1} alt='next-i' className='nest-image' />
         <div className="nestjs-features">
           <h2>Nest Development Services</h2>
@@ -50,6 +41,9 @@ const Nestjs = () => {
             NestJs Development Hub! </h1>
           <div className="features-grid">
             <div className="feature">
+              <div className="feature-icon">
+                <FaPuzzlePiece />
+              </div>
               <h3>Modular Design</h3>
               <p>
                 NestJS encourages the use of modular architecture, enabling programmers to divide their code into manageable, reusable modules.
@@ -57,6 +51,9 @@ const Nestjs = () => {
               </p>
             </div>
             <div className="feature">
+              <div className="feature-icon">
+                <TbBrandTypescript  />
+              </div>
               <h3>TypeScript Support</h3>
               <p>
                 NestJS now supports static typing thanks to TypeScript, a superset of JavaScript, which enables developers to detect mistakes
@@ -64,6 +61,9 @@ const Nestjs = () => {
               </p>
             </div>
             <div className="feature">
+              <div className="feature-icon">
+                <FaSitemap />
+              </div>
               <h3>Dependency Injection</h3>
               <p>
                 Dependency injection is used by NestJS to control the generation and resolution of objects and their dependencies.
@@ -72,6 +72,9 @@ const Nestjs = () => {
               </p>
             </div>
             <div className="feature">
+              <div className="feature-icon">
+                <FaServer />
+              </div>
               <h3>Built-in HTTP Server</h3>
               <p>
                 A built-in HTTP server for NestJS is based on Express.js, a well-liked Node.js web application framework.
@@ -79,6 +82,9 @@ const Nestjs = () => {
               </p>
             </div>
             <div className="feature">
+              <div className="feature-icon">
+                <FaChartLine />
+              </div>
               <h3>Scalability and Performance</h3>
               <p>
                 NestJS's non-blocking, asynchronous architecture makes it ideal for creating high-performance apps that can manage numerous requests at once.
@@ -86,6 +92,9 @@ const Nestjs = () => {
               </p>
             </div>
             <div className="feature">
+              <div className="feature-icon">
+                <FaUsers />
+              </div>
               <h3>Officially Supported by the Community</h3>
               <p>
                 The development community of NestJS is dynamic and expanding, with members actively participating in the ecosystem.
